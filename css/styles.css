@@ -17,7 +17,7 @@
 
 }
 
-/*Set all elements*/
+/* Set all elements */
 * {
     margin: 0;
     padding: 0;
@@ -36,8 +36,9 @@
     --page-margin-large: 52px;
 }
 
-/**/
+/* Smallest design (viewport smaller than 480px) */
 body {
+    max-width: 1242px;
     margin: 0 auto;
 }
 
@@ -47,7 +48,6 @@ body img {
     margin: auto;
 }
 
-
 .p-tag {
     font-family: 'jetbrains_monoextrabold', Helvetica, Arial, sans-serif;
     font-size: 0.8125em;
@@ -56,48 +56,6 @@ body img {
     font-weight: bold;
     line-height: 20px;
     letter-spacing: 0em;
-}
-
-/* Animation */
-#intro-text {
-    -webkit-animation: fadein 4s;
-    animation: fadein 4s;
-}
-
-#animate-img {
-    -webkit-animation: fadein 2s;
-    animation: fadein 2s;
-}
-
-@-webkit-keyframes fadein {
-    from {
-        opacity: 0;
-    }
-    to {
-        opacity: 1;
-    }
-}
-
-@keyframes fadein {
-    from {
-        opacity: 0;
-    }
-    to {
-        opacity: 1;
-    }
-}
-
-
-.space {
-    margin-bottom: 1.3em;
-}
-
-
-/* Smallest design */
-
-body {
-    max-width: 1242px;
-    margin: auto;
 }
 
 .header-container {
@@ -147,6 +105,10 @@ p {
     line-height: 24px;
     font-weight: lighter;
     letter-spacing: -0.02em;
+}
+
+.space {
+    margin-bottom: 1.3em;
 }
 
 .red {
@@ -202,7 +164,6 @@ p {
     justify-content: center;
     grid-column: 2/3;
     grid-row: 1/2;
-    /*padding-right: 15px;*/
 }
 
 #ethos {
@@ -217,8 +178,7 @@ p {
     margin: 0 var(--page-margin-small);
 }
 
-/*Footer*/
-
+/* Footer */
 footer {
     text-align: center;
     margin: 5em auto 1em auto;
@@ -230,6 +190,34 @@ footer p {
     margin-top: 1em;
 }
 
+/* Animation */
+#intro-text {
+    -webkit-animation: fadein 4s;
+    animation: fadein 4s;
+}
+
+#animate-img {
+    -webkit-animation: fadein 2s;
+    animation: fadein 2s;
+}
+
+@-webkit-keyframes fadein {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes fadein {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
 
 /* Apply these changes on a viewport larger than 480px */
 @media screen and (min-width: 480px) {
@@ -239,7 +227,6 @@ footer p {
     }
 }
 
-
 @media screen and (min-width: 600px) {
 
     .header-container {
@@ -247,7 +234,6 @@ footer p {
     }
 
     #logo {
-        /*margin-right: var(--page-margin-mid);*/
         width: 58px;
         height: 58px;
     }
@@ -273,7 +259,6 @@ footer p {
     }
 }
 
-
 @media screen and (min-width: 850px) {
     h1 {
         font-size: 3em;
@@ -288,9 +273,6 @@ footer p {
         margin-right: var(--page-margin-large);
     }
 
-    /*#logo {*/
-    /*    margin-right: var(--page-margin-large);*/
-    /*}*/
     #intro-text {
         margin: 0 var(--page-margin-large);
     }
