@@ -1,5 +1,22 @@
 @import url(https://cloud.typography.com/7463094/7169552/css/fonts.css);
 
+@font-face {
+    font-family: 'jetbrains_monoextrabold';
+    src: url('jetbrainsmono-extrabold-webfont.woff2') format('woff2'),
+    url('jetbrainsmono-extrabold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'jetbrains_monoregular';
+    src: url('jetbrainsmono-regular-webfont.woff2') format('woff2'),
+    url('jetbrainsmono-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
 /*Set all elements*/
 * {
     margin: 0;
@@ -9,10 +26,19 @@
     box-sizing: border-box;
 }
 
+/* CSS variables */
 :root {
     --black: black;
     --accent-color: #FF2801;
-    --page-margin: 15px;
+    --light-gray: #F8F8F8;
+    --page-margin-small: 15px;
+    --page-margin-mid: 30px;
+    --page-margin-large: 52px;
+}
+
+/**/
+body {
+    margin: 0 auto;
 }
 
 body img {
@@ -23,10 +49,13 @@ body img {
 
 
 .p-tag {
-    font-size: 0.7em;
+    font-family: 'jetbrains_monoextrabold', Helvetica, Arial, sans-serif;
+    font-size: 0.8125em;
     text-transform: uppercase;
     color: #A0A1A6;
     font-weight: bold;
+    line-height: 20px;
+    letter-spacing: 0em;
 }
 
 /* Animation */
@@ -59,29 +88,15 @@ body img {
 }
 
 
-
 .space {
     margin-bottom: 1.3em;
 }
 
 
-/*Footer*/
-
-footer {
-    text-align: center;
-    margin: 5em auto 1em auto;
-}
-
-footer p {
-    font-size: 0.8em;
-    color: #A0A1A6;
-    margin-top: 1em;
-}
-
-/*@media screen and (min-width: 370px) {*/
+/* Smallest design */
 
 body {
-    max-width: 1200px;
+    max-width: 1242px;
     margin: auto;
 }
 
@@ -89,11 +104,12 @@ body {
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
+    position: fixed;
+    top: 0;
+    right: var(--page-margin-small);
 }
 
 #logo {
-    margin-top: 0;
-    margin-right: var(--page-margin);
     width: 54px;
     height: 54px;
     background-color: var(--black);
@@ -104,7 +120,7 @@ body {
     display: flex;
     align-items: center;
     height: 393px;
-    margin: 0 var(--page-margin);
+    margin: 0 var(--page-margin-small);
 }
 
 h1 {
@@ -119,19 +135,20 @@ h2 {
     padding-top: 47px;
     padding-bottom: 16px;
     font-size: 1.75em;
-    /*line-height: 2.375em;*/
     letter-spacing: -0.02em;
 }
 
 h3 {
-    font-size: 1.1em;
+    font-size: 1.12em;
     color: var(--black);
 }
 
 p {
+    font-family: 'jetbrains_monoregular', Helvetica, Arial, sans-serif;
     font-size: 1em;
-    line-height: 23px;
+    line-height: 24px;
     font-weight: lighter;
+    letter-spacing: -0.02em;
 }
 
 .red {
@@ -140,52 +157,209 @@ p {
 
 .app-container {
     list-style-type: none;
+    background-color: white;
+    height: 90px;
+    transition: background-color .2s;
 }
 
 .app-container a {
-    height: 90px;
     display: grid;
     grid-template-columns: 85px 1fr;
-    grid-template-rows: 90px 90px 90px;
+    grid-template-rows: auto;
+    text-decoration: none;
+    height: 90px;
 }
 
-/*#shorty-plug-img {*/
-/*    width: 54px;*/
-/*    margin-right: 15px;*/
-/*}*/
-
-/*#shorty-ext-img {*/
-/*    width: 51px;*/
-/*    margin-right: 18px;*/
-/*}*/
-
-/*#awake-img {*/
-/*    width: 56px;*/
-/*    margin-right: 15px;*/
-/*}*/
-
 .app-container a img {
-    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+}
+
+.app-container:hover {
+    background-color: var(--light-gray);
+}
+
+#shorty-plug-img {
+    width: 54px;
+    grid-column: 1/2;
+    grid-row: 1/2;
+}
+
+#shorty-ext-img {
+    width: 51px;
+    grid-column: 1/2;
+    grid-row: 1/2;
+}
+
+#awake-img {
+    width: 56px;
+    grid-column: 1/2;
+    grid-row: 1/2;
 }
 
 .app-text {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    grid-column: 2/3;
+    grid-row: 1/2;
+    /*padding-right: 15px;*/
 }
 
 #ethos {
-    margin: 0 var(--page-margin);
+    margin: 0 var(--page-margin-small) 20px var(--page-margin-small);
+}
+
+#ethos h2 {
+    padding-bottom: 27px;
 }
 
 #apps h2 {
-    margin: 0 var(--page-margin);
+    margin: 0 var(--page-margin-small);
 }
 
-/*@media screen and (min-width: 550px) {*/
+/*Footer*/
+
+footer {
+    text-align: center;
+    margin: 5em auto 1em auto;
+}
+
+footer p {
+    font-size: 0.75em;
+    color: var(--black);
+    margin-top: 1em;
+}
 
 
-/*@media screen and (min-width: 600px) {*/
+/* Apply these changes on a viewport larger than 480px */
+@media screen and (min-width: 480px) {
+    h1 {
+        font-size: 40px;
+        line-height: 50px;
+    }
+}
 
 
-/*@media screen and (min-width: 750px) {*/
+@media screen and (min-width: 600px) {
+
+    .header-container {
+        right: var(--page-margin-mid);
+    }
+
+    #logo {
+        /*margin-right: var(--page-margin-mid);*/
+        width: 58px;
+        height: 58px;
+    }
+
+    #intro-text {
+        margin: 0 var(--page-margin-mid);
+    }
+
+    #ethos {
+        margin: 0 var(--page-margin-mid) 20px var(--page-margin-mid);
+    }
+
+    #apps h2 {
+        margin: 0 var(--page-margin-mid);
+    }
+
+    ul {
+        margin: 0 15px;
+    }
+
+    .app-container {
+        border-radius: 3px;
+    }
+}
+
+
+@media screen and (min-width: 850px) {
+    h1 {
+        font-size: 48px;
+        line-height: 59px;
+    }
+
+    #intro-text {
+        height: 407px;
+    }
+
+    .header-container {
+        right: var(--page-margin-large);
+    }
+
+    /*#logo {*/
+    /*    margin-right: var(--page-margin-large);*/
+    /*}*/
+
+    #intro-text {
+        margin: 0 var(--page-margin-large);
+    }
+
+    #ethos {
+        margin: 0 var(--page-margin-large) 20px var(--page-margin-large);
+    }
+
+    #apps h2 {
+        margin: 0 var(--page-margin-large);
+    }
+
+    ul {
+        margin: 0 37px;
+    }
+}
+
+@media screen and (min-width: 1000px) {
+    #logo {
+        width: 68px;
+        height: 68px;
+    }
+
+    #all-info {
+        display: flex;
+        flex-direction: row;
+    }
+
+    #ethos {
+        width: 50%;
+        margin: 0 0 20px var(--page-margin-large);
+    }
+
+    ul {
+        margin: 0 0 0 44px;
+    }
+
+    .app-container {
+        min-width: 488px;
+        height: 100px;
+    }
+
+    .app-container a {
+        grid-template-columns: 98px 1fr;
+        grid-template-rows: auto;
+        height: 100px;
+    }
+
+    #shorty-plug-img {
+        width: 64px;
+    }
+
+    #shorty-ext-img {
+        width: 61px;
+    }
+
+    #awake-img {
+        width: 65px;
+    }
+
+    #ethos h2 {
+        padding-bottom: 34px;
+    }
+
+    #apps h2 {
+        margin: 0 0 0 60px;
+    }
+
+}
