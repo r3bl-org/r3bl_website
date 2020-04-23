@@ -104,9 +104,7 @@ body {
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
-    position: fixed;
-    top: 0;
-    right: var(--page-margin-small);
+    margin-right: var(--page-margin-small);
 }
 
 #logo {
@@ -236,7 +234,7 @@ footer p {
 /* Apply these changes on a viewport larger than 480px */
 @media screen and (min-width: 480px) {
     h1 {
-        font-size: 40px;
+        font-size: 2.5em;
         line-height: 50px;
     }
 }
@@ -245,7 +243,7 @@ footer p {
 @media screen and (min-width: 600px) {
 
     .header-container {
-        right: var(--page-margin-mid);
+        margin-right: var(--page-margin-mid);
     }
 
     #logo {
@@ -278,7 +276,7 @@ footer p {
 
 @media screen and (min-width: 850px) {
     h1 {
-        font-size: 48px;
+        font-size: 3em;
         line-height: 59px;
     }
 
@@ -287,13 +285,12 @@ footer p {
     }
 
     .header-container {
-        right: var(--page-margin-large);
+        margin-right: var(--page-margin-large);
     }
 
     /*#logo {*/
     /*    margin-right: var(--page-margin-large);*/
     /*}*/
-
     #intro-text {
         margin: 0 var(--page-margin-large);
     }
