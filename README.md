@@ -8,12 +8,11 @@
 
 ## Fonts
 
-- [Add Fonts to Your Site With FontSquirrel](https://tinyurl.com/y8e9umtd)
-- [Font Squirrel Webfont Generator](https://tinyurl.com/zwx4rrh)
 - [How to add custom fonts to any website](https://tinyurl.com/y22akkgb)
-
-
 - [Can I use... -> TTF/OTF font file format browser support](https://caniuse.com/#search=ttf)
+- [url() CSS function](https://tinyurl.com/yboxsvp6)
+- [@font-face CSS at-rule](https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face)
+- [src CSS descriptor of the @font-face rule](https://tinyurl.com/y8tvx7os)
 
 ---------------------------------------------
 

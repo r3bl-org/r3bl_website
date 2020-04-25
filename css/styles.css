@@ -2,14 +2,14 @@
 
 @font-face {
     font-family: 'JetbrainsMono-ExtraBold';
-    src: url("JetBrainsMono-ExtraBold.ttf") format("ttf");
+    src: url("JetBrainsMono-ExtraBold.ttf") format("truetype");
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'JetbrainsMono-Regular';
-    src: url("JetBrainsMono-Regular.ttf") format("ttf");
+    src: url("JetBrainsMono-Regular.ttf") format("truetype");
     font-weight: normal;
     font-style: normal;
 
