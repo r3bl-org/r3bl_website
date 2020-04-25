@@ -13,6 +13,8 @@
 - [How to add custom fonts to any website](https://tinyurl.com/y22akkgb)
 
 
+- [Can I use... -> TTF/OTF font file format browser support](https://caniuse.com/#search=ttf)
+
 ---------------------------------------------
 
 - [Shorty - URL Shortener, Chrome extension created by R3BL](https://tinyurl.com/y4qv2rte)

@@ -1,17 +1,13 @@
 @import url(https://cloud.typography.com/7463094/7169552/css/fonts.css);
 
 @font-face {
-    font-family: 'jetbrains_monoextrabold';
-    src: url('jetbrainsmono-extrabold-webfont.woff2') format('woff2'),
-    url('jetbrainsmono-extrabold-webfont.woff') format('woff');
+    font-family: 'JetbrainsMono-ExtraBold';
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
-    font-family: 'jetbrains_monoregular';
-    src: url('jetbrainsmono-regular-webfont.woff2') format('woff2'),
-    url('jetbrainsmono-regular-webfont.woff') format('woff');
+    font-family: 'JetbrainsMono-Regular';
     font-weight: normal;
     font-style: normal;
 
