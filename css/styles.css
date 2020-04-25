@@ -45,7 +45,7 @@ body img {
 }
 
 .p-tag {
-    font-family: 'jetbrains_monoextrabold', Helvetica, Arial, sans-serif;
+    font-family: 'JetbrainsMono-ExtraBold', Helvetica, Arial, sans-serif;
     font-size: 0.8125em;
     text-transform: uppercase;
     color: #A0A1A6;
@@ -96,7 +96,7 @@ h3 {
 }
 
 p {
-    font-family: 'jetbrains_monoregular', Helvetica, Arial, sans-serif;
+    font-family: 'JetbrainsMono-Regular', Helvetica, Arial, sans-serif;
     font-size: 1em;
     line-height: 24px;
     font-weight: lighter;
