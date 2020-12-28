@@ -1,37 +1,41 @@
-@import url(https://cloud.typography.com/7463094/7169552/css/fonts.css);
+/* Load all custom fonts. */
+@import url("font.css");
 
 @font-face {
     font-family: 'JetbrainsMono-ExtraBold';
-    src: url("JetBrainsMono-ExtraBold.ttf") format("truetype");
+    src: url("JetBrainsMono-ExtraBold.woff2") format("woff2");
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'JetbrainsMono-Regular';
-    src: url("JetBrainsMono-Regular.ttf") format("truetype");
+    src: url("JetBrainsMono-Regular.woff2") format("woff2");
     font-weight: normal;
     font-style: normal;
+}
 
+/* CSS variables */
+:root {
+    --bg-color: black;
+    --fg-color: white;
+    --accent-color: #FF2801;
+    --hover-color: #F8F8F8;
+    --page-margin-small: 15px;
+    --page-margin-mid: 30px;
+    --page-margin-large: 52px;
+    --code-font-regular: 'JetbrainsMono-Regular', monospace;
+    --code-font-bold: 'JetbrainsMono-ExtraBold', monospace;
+    --default-font: "Gotham SSm A", sans-serif;
 }
 
 /* Set all elements */
 * {
     margin: 0;
     padding: 0;
-    font-family: "Gotham SSm A", "Gotham SSm B", Helvetica, Arial, sans-serif;
+    font-family: var(--default-font);
     font-size: 1em;
     box-sizing: border-box;
-}
-
-/* CSS variables */
-:root {
-    --black: black;
-    --accent-color: #FF2801;
-    --light-gray: #F8F8F8;
-    --page-margin-small: 15px;
-    --page-margin-mid: 30px;
-    --page-margin-large: 52px;
 }
 
 /* Smallest design (viewport smaller than 480px) */
@@ -47,7 +51,7 @@ body img {
 }
 
 .p-tag {
-    font-family: 'JetbrainsMono-ExtraBold', Helvetica, Arial, sans-serif;
+    font-family: var(--code-font-bold);
     font-size: 0.8125em;
     text-transform: uppercase;
     color: #A0A1A6;
@@ -66,7 +70,7 @@ body img {
 #logo {
     width: 54px;
     height: 54px;
-    background-color: var(--black);
+    background-color: var(--bg-color);
     border-radius: 0 0 4px 4px;
 }
 
@@ -78,14 +82,14 @@ body img {
 }
 
 h1 {
-    color: var(--black);
+    color: var(--bg-color);
     font-size: 2.2em;
     line-height: 48px;
     letter-spacing: -0.02em;
 }
 
 h2 {
-    color: var(--black);
+    color: var(--bg-color);
     padding-top: 47px;
     padding-bottom: 16px;
     font-size: 1.75em;
@@ -94,11 +98,11 @@ h2 {
 
 h3 {
     font-size: 1.12em;
-    color: var(--black);
+    color: var(--bg-color);
 }
 
 p {
-    font-family: 'JetbrainsMono-Regular', Helvetica, Arial, sans-serif;
+    font-family: var(--code-font-regular);
     font-size: 1em;
     line-height: 24px;
     font-weight: lighter;
@@ -115,7 +119,7 @@ p {
 
 .app-container {
     list-style-type: none;
-    background-color: white;
+    background-color: var(--fg-color);
     height: 90px;
     transition: background-color .2s;
 }
@@ -135,7 +139,7 @@ p {
 }
 
 .app-container:hover {
-    background-color: var(--light-gray);
+    background-color: var(--hover-color);
 }
 
 #shorty-plug-img {
@@ -184,7 +188,7 @@ footer {
 
 footer p {
     font-size: 0.75em;
-    color: var(--black);
+    color: var(--bg-color);
     margin-top: 1em;
 }
 
