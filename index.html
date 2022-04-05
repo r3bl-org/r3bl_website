@@ -1,81 +1,120 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <link rel="stylesheet" href="css/styles.css" type="text/css">
-    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="css/styles.css" type="text/css" />
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>R3BL</title>
-</head>
-<body>
+  </head>
+  <body>
+    <header class="header-container">
+      <figure id="logo">
+        <a href="index.html"><img src="images/logo.svg" alt="Logo" /></a>
+      </figure>
+    </header>
 
-<header class="header-container">
-    <figure id="logo">
-        <a href="index.html"><img src="images/logo.svg" alt="Logo"></a>
-    </figure>
-</header>
+    <main>
+      <div id="intro-text">
+        <h1 id="animate-text">
+          We are a software <span class="red">development</span> company based in Silicon
+          Valley crafting productivity software for <span class="red">developers</span>
+        </h1>
+      </div>
 
-<main>
-    <div id="intro-text">
-        <h1 id="animate-text">We are a <span class="red">design</span> and software <span
-                class="red">development</span> company based in Silicon Valley</h1>
-    </div>
-
-    <section id="all-info">
-
+      <section id="all-info">
         <section id="ethos">
-            <h2>Our ethos</h2>
-            <p class="space">Our products are anchored in the belief that technology should serve the needs of
-                humans. We
-                strive to understand why people use what they use. And we strive to understand the benefit of
-                the
-                benefit of the things that we do for our end users.</p>
-            <p>To this end, we are creating small projects that help people smile more and be happier in their
-                daily
-                lives 🙂. </p>
+          <h2>Our ethos</h2>
+          <p class="space">
+            Our open source products are anchored in the belief that technology should
+            serve the needs of humans and all living things. We strive to understand what
+            makes software usable & useful so that it can unlock more human potential.
+          </p>
+          <p class="space">
+            To this end, we are hard at work building software that helps software
+            developers be more productive in their remote & async work reality, smile more
+            and be happier in their daily lives 🙂.
+          </p>
+          <p>
+            If you're a developer, stay tuned for our product offerings coming end of
+            2022! 🦜
+          </p>
         </section>
 
         <section id="apps">
-            <h2>Our apps</h2>
-            <ul>
-                <li class="app-container">
-                    <a href="https://plugins.jetbrains.com/plugin/14122-shorty--url-shortener" target="_blank">
-                        <img id="shorty-plug-img" src="images/shorty-plugin.svg">
-                        <div class="app-text">
-                            <p class="p-tag">JetBrains Plugin</p>
-                            <h3>Shorty - URL Shortener</h3>
-                        </div>
-                    </a>
-                </li>
-                <li class="app-container">
-                    <a href="https://chrome.google.com/webstore/detail/shorty/cbgcnhimnlnjejdopldfdicfingmaijg?hl=en-US"
-                       target="_blank">
-                        <img id="shorty-ext-img" src="images/shorty-extension.svg">
-                        <div class="app-text">
-                            <p class="p-tag">Chrome extension</p>
-                            <h3>Shorty - URL Shortener</h3>
-                        </div>
-                    </a>
-                </li>
-                <li class="app-container">
-                    <a href="https://play.google.com/store/apps/details?id=com.r3bl.stayawake&hl=en_US" target="_blank">
-                        <img id="awake-img" src="images/awake.png">
-                        <div class="app-text">
-                            <p class="p-tag">Android app</p>
-                            <h3>Awake - Keep screen on while charging</h3>
-                        </div>
-                    </a>
-                </li>
-            </ul>
+          <h2>Our <code>(current && !product)</code> offerings</h2>
+          <ul>
+            <li class="app-container">
+              <a href="https://developerlife.com" target="_blank">
+                <img id="developerlife-icon-img" src="images/dl-logo-icon-dark.svg" />
+                <div class="app-text">
+                  <p class="p-tag">Learning platform for developers</p>
+                  <h3><code>developerlife.com</code></h3>
+                </div>
+              </a>
+            </li>
+            <li class="app-container">
+              <a href="https://crates.io/crates/r3bl_rs_utils" target="_blank">
+                <img id="cargo-icon-img" src="images/cargo-logo.png" />
+                <div class="app-text">
+                  <p class="p-tag">Useful & ergonomic Rust library</p>
+                  <h3><code>r3bl_rs_utils</code> crate</h3>
+                </div>
+              </a>
+            </li>
+            <li class="app-container">
+              <a href="https://developerlife.com" target="_blank">
+                <img id="npm-icon-img" src="images/npm-logo.svg" />
+                <div class="app-text">
+                  <p class="p-tag">Useful & ergonomic TypeScript library</p>
+                  <h3><code>r3bl_ts_utils</code> module</h3>
+                </div>
+              </a>
+            </li>
+            <li class="app-container">
+              <a
+                href="https://plugins.jetbrains.com/plugin/14122-shorty--url-shortener"
+                target="_blank"
+              >
+                <img id="shorty-plug-img" src="images/shorty-plugin.svg" />
+                <div class="app-text">
+                  <p class="p-tag">JetBrains IDE Plugin</p>
+                  <h3>Shorty - URL Shortener</h3>
+                </div>
+              </a>
+            </li>
+            <li class="app-container">
+              <a
+                href="https://chrome.google.com/webstore/detail/shorty/cbgcnhimnlnjejdopldfdicfingmaijg?hl=en-US"
+                target="_blank"
+              >
+                <img id="shorty-ext-img" src="images/shorty-extension.svg" />
+                <div class="app-text">
+                  <p class="p-tag">Chrome extension</p>
+                  <h3>Shorty - URL Shortener</h3>
+                </div>
+              </a>
+            </li>
+            <li class="app-container">
+              <a
+                href="https://play.google.com/store/apps/details?id=com.r3bl.stayawake&hl=en_US"
+                target="_blank"
+              >
+                <img id="awake-img" src="images/awake.png" />
+                <div class="app-text">
+                  <p class="p-tag">Android app</p>
+                  <h3>Awake - Keep screen on while charging</h3>
+                </div>
+              </a>
+            </li>
+          </ul>
         </section>
+      </section>
+    </main>
 
-    </section>
-</main>
-
-<footer>
-    <img src="images/logo.svg" width="35">
-    <p>Copyright ©R3BL 2021</p>
-</footer>
-
-</body>
+    <footer>
+      <img src="images/logo.svg" width="35" />
+      <p>Copyright ©R3BL 2022</p>
+    </footer>
+  </body>
 </html>

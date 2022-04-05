@@ -1,0 +1,21 @@
+/*
+ *   Copyright (c) 2022 R3BL LLC
+ *   All rights reserved.
+*/
+
+/* Load all custom fonts. */
+@import url("font.css");
+
+@font-face {
+  font-family: "JetbrainsMono-ExtraBold";
+  src: url("JetBrainsMono-ExtraBold.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "JetbrainsMono-Regular";
+  src: url("JetBrainsMono-Regular.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}

@@ -1,346 +1,353 @@
-/* Load all custom fonts. */
-@import url("font.css");
+/*
+ *   Copyright (c) 2022 R3BL LLC
+ *   All rights reserved.
+*/
 
-@font-face {
-    font-family: 'JetbrainsMono-ExtraBold';
-    src: url("JetBrainsMono-ExtraBold.woff2") format("woff2");
-    font-weight: normal;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'JetbrainsMono-Regular';
-    src: url("JetBrainsMono-Regular.woff2") format("woff2");
-    font-weight: normal;
-    font-style: normal;
-}
+@import "reset.css";
+@import "custom_fonts.css";
 
 /* CSS variables */
 :root {
-    --bg-color: black;
-    --fg-color: white;
-    --accent-color: #FF2801;
-    --hover-color: #F8F8F8;
-    --page-margin-small: 15px;
-    --page-margin-mid: 30px;
-    --page-margin-large: 52px;
-    --code-font-regular: 'JetbrainsMono-Regular', monospace;
-    --code-font-bold: 'JetbrainsMono-ExtraBold', monospace;
-    --default-font: "Gotham SSm A", sans-serif;
+  --body-bg-color: #272930;
+  --text-color: #e6e6e6;
+  --container-bg-color: #1b1b1e;
+  --accent-color: #ff2801;
+  --hover-color: rgba(90, 174, 251, 0.2);
+  --page-margin-small: 15px;
+  --page-margin-mid: 30px;
+  --page-margin-large: 52px;
+  --code-font-regular: "JetbrainsMono-Regular", monospace;
+  --code-font-bold: "JetbrainsMono-ExtraBold", monospace;
+  --default-font: "Gotham SSm A", sans-serif;
 }
 
-/* Set all elements */
-* {
-    margin: 0;
-    padding: 0;
-    font-family: var(--default-font);
-    font-size: 1em;
-    box-sizing: border-box;
+/* Default styles */
+body {
+  background-color: var(--body-bg-color);
+  color: var(--text-color);
+  font-family: var(--default-font);
+  font-size: 1em;
+  box-sizing: border-box;
 }
 
 /* Smallest design (viewport smaller than 480px) */
 body {
-    max-width: 1242px;
-    margin: 0 auto;
+  max-width: 1242px;
+  margin: 0 auto;
 }
 
 body img {
-    display: block;
-    max-width: 100%;
-    margin: auto;
+  display: block;
+  max-width: 100%;
+  margin: auto;
 }
 
 .p-tag {
-    font-family: var(--code-font-bold);
-    font-size: 0.8125em;
-    text-transform: uppercase;
-    color: #A0A1A6;
-    font-weight: bold;
-    line-height: 20px;
-    letter-spacing: 0em;
+  font-family: var(--code-font-bold);
+  font-size: 0.8125em;
+  text-transform: uppercase;
+  color: #a0a1a6;
+  font-weight: bold;
+  line-height: 20px;
+  letter-spacing: 0em;
 }
 
 .header-container {
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-end;
-    margin-right: var(--page-margin-small);
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  margin-right: var(--page-margin-small);
 }
 
 #logo {
-    width: 54px;
-    height: 54px;
-    background-color: var(--bg-color);
-    border-radius: 0 0 4px 4px;
+  width: 54px;
+  height: 54px;
+  background-color: var(--text-color);
+  border-radius: 0 0 4px 4px;
 }
 
 #intro-text {
-    display: flex;
-    align-items: center;
-    height: 393px;
-    margin: 0 var(--page-margin-small);
+  display: flex;
+  align-items: center;
+  height: 393px;
+  margin: 0 var(--page-margin-small);
 }
 
 h1 {
-    color: var(--bg-color);
-    font-size: 2.2em;
-    line-height: 48px;
-    letter-spacing: -0.02em;
+  color: var(--text-color);
+  font-size: 2.2em;
+  line-height: 48px;
+  letter-spacing: -0.02em;
 }
 
 h2 {
-    color: var(--bg-color);
-    padding-top: 47px;
-    padding-bottom: 16px;
-    font-size: 1.75em;
-    letter-spacing: -0.02em;
+  color: var(--text-color);
+  padding-top: 47px;
+  padding-bottom: 16px;
+  font-size: 1.75em;
+  letter-spacing: -0.02em;
 }
 
 h3 {
-    font-size: 1.12em;
-    color: var(--bg-color);
+  font-size: 1.12em;
+  color: var(--text-color);
+}
+
+pre,
+code {
+  font-family: var(--code-font-regular);
 }
 
 p {
-    font-family: var(--code-font-regular);
-    font-size: 1em;
-    line-height: 24px;
-    font-weight: lighter;
-    letter-spacing: -0.02em;
+  font-family: var(--code-font-regular);
+  font-size: 1em;
+  line-height: 24px;
+  font-weight: lighter;
+  letter-spacing: -0.02em;
 }
 
 .space {
-    margin-bottom: 1.3em;
+  margin-bottom: 1.3em;
 }
 
 .red {
-    color: var(--accent-color);
+  color: var(--accent-color);
 }
 
 .app-container {
-    list-style-type: none;
-    background-color: var(--fg-color);
-    height: 90px;
-    transition: background-color .2s;
+  list-style-type: none;
+  background-color: var(--container-bg-color);
+  height: 90px;
+  transition: background-color 0.2s;
 }
 
 .app-container a {
-    display: grid;
-    grid-template-columns: 85px 1fr;
-    grid-template-rows: auto;
-    text-decoration: none;
-    height: 90px;
+  display: grid;
+  grid-template-columns: 85px 1fr;
+  grid-template-rows: auto;
+  text-decoration: none;
+  height: 90px;
 }
 
 .app-container a img {
-    display: flex;
-    flex-direction: column;
-    align-self: center;
+  display: flex;
+  flex-direction: column;
+  align-self: center;
 }
 
 .app-container:hover {
-    background-color: var(--hover-color);
+  background-color: var(--hover-color);
 }
 
 #shorty-plug-img {
-    width: 54px;
-    grid-column: 1/2;
-    grid-row: 1/2;
+  width: 54px;
+  grid-column: 1/2;
+  grid-row: 1/2;
 }
 
 #shorty-ext-img {
-    width: 51px;
-    grid-column: 1/2;
-    grid-row: 1/2;
+  width: 51px;
+  grid-column: 1/2;
+  grid-row: 1/2;
 }
 
 #awake-img {
-    width: 56px;
-    grid-column: 1/2;
-    grid-row: 1/2;
+  width: 56px;
+  grid-column: 1/2;
+  grid-row: 1/2;
 }
 
 .app-text {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    grid-column: 2/3;
-    grid-row: 1/2;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  grid-column: 2/3;
+  grid-row: 1/2;
 }
 
 #ethos {
-    margin: 0 var(--page-margin-small) 20px var(--page-margin-small);
+  margin: 0 var(--page-margin-small) 20px var(--page-margin-small);
 }
 
 #ethos h2 {
-    padding-bottom: 27px;
+  padding-bottom: 27px;
 }
 
 #apps h2 {
-    margin: 0 var(--page-margin-small);
+  margin: 0 var(--page-margin-small);
 }
 
 /* Footer */
 footer {
-    text-align: center;
-    margin: 5em auto 1em auto;
+  text-align: center;
+  margin: 5em auto 1em auto;
 }
 
 footer p {
-    font-size: 0.75em;
-    color: var(--bg-color);
-    margin-top: 1em;
+  font-size: 0.75em;
+  color: var(--text-color);
+  margin-top: 1em;
 }
 
 /* Animation */
 #intro-text {
-    -webkit-animation: fadein 4s;
-    animation: fadein 4s;
+  -webkit-animation: fadein 4s;
+  animation: fadein 4s;
 }
 
 #animate-img {
-    -webkit-animation: fadein 2s;
-    animation: fadein 2s;
+  -webkit-animation: fadein 2s;
+  animation: fadein 2s;
 }
 
 @-webkit-keyframes fadein {
-    from {
-        opacity: 0;
-    }
-    to {
-        opacity: 1;
-    }
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 @keyframes fadein {
-    from {
-        opacity: 0;
-    }
-    to {
-        opacity: 1;
-    }
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 /* Apply these changes on a viewport larger than 480px */
 @media screen and (min-width: 480px) {
-    h1 {
-        font-size: 2.5em;
-        line-height: 50px;
-    }
+  h1 {
+    font-size: 2.5em;
+    line-height: 50px;
+  }
 }
 
 @media screen and (min-width: 600px) {
+  .header-container {
+    margin-right: var(--page-margin-mid);
+  }
 
-    .header-container {
-        margin-right: var(--page-margin-mid);
-    }
+  #logo {
+    width: 58px;
+    height: 58px;
+  }
 
-    #logo {
-        width: 58px;
-        height: 58px;
-    }
+  #intro-text {
+    margin: 0 var(--page-margin-mid);
+  }
 
-    #intro-text {
-        margin: 0 var(--page-margin-mid);
-    }
+  #ethos {
+    margin: 0 var(--page-margin-mid) 20px var(--page-margin-mid);
+  }
 
-    #ethos {
-        margin: 0 var(--page-margin-mid) 20px var(--page-margin-mid);
-    }
+  #apps h2 {
+    margin: 0 var(--page-margin-mid);
+  }
 
-    #apps h2 {
-        margin: 0 var(--page-margin-mid);
-    }
+  ul {
+    margin: 0 15px;
+  }
 
-    ul {
-        margin: 0 15px;
-    }
-
-    .app-container {
-        border-radius: 3px;
-    }
+  .app-container {
+    border-radius: 3px;
+  }
 }
 
 @media screen and (min-width: 850px) {
-    h1 {
-        font-size: 3em;
-        line-height: 59px;
-    }
+  h1 {
+    font-size: 3em;
+    line-height: 59px;
+  }
 
-    #intro-text {
-        height: 407px;
-    }
+  #intro-text {
+    height: 407px;
+  }
 
-    .header-container {
-        margin-right: var(--page-margin-large);
-    }
+  .header-container {
+    margin-right: var(--page-margin-large);
+  }
 
-    #intro-text {
-        margin: 0 var(--page-margin-large);
-    }
+  #intro-text {
+    margin: 0 var(--page-margin-large);
+  }
 
-    #ethos {
-        margin: 0 var(--page-margin-large) 20px var(--page-margin-large);
-    }
+  #ethos {
+    margin: 0 var(--page-margin-large) 20px var(--page-margin-large);
+  }
 
-    #apps h2 {
-        margin: 0 var(--page-margin-large);
-    }
+  #apps h2 {
+    margin: 0 var(--page-margin-large);
+  }
 
-    ul {
-        margin: 0 37px;
-    }
+  ul {
+    margin: 0 37px;
+  }
 }
 
 @media screen and (min-width: 1000px) {
-    #logo {
-        width: 68px;
-        height: 68px;
-    }
+  #logo {
+    width: 68px;
+    height: 68px;
+  }
 
-    #all-info {
-        display: flex;
-        flex-direction: row;
-    }
+  #all-info {
+    display: flex;
+    flex-direction: row;
+  }
 
-    #ethos {
-        width: 50%;
-        margin: 0 0 20px var(--page-margin-large);
-    }
+  #ethos {
+    width: 50%;
+    margin: 0 0 20px var(--page-margin-large);
+  }
 
-    ul {
-        margin: 0 0 0 44px;
-    }
+  ul {
+    margin: 0 0 0 44px;
+  }
 
-    .app-container {
-        min-width: 488px;
-        height: 100px;
-    }
+  .app-container {
+    min-width: 488px;
+    height: 100px;
+  }
 
-    .app-container a {
-        grid-template-columns: 98px 1fr;
-        grid-template-rows: auto;
-        height: 100px;
-    }
+  .app-container a {
+    grid-template-columns: 98px 1fr;
+    grid-template-rows: auto;
+    height: 100px;
+  }
 
-    #shorty-plug-img {
-        width: 64px;
-    }
+  #developerlife-icon-img {
+    width: 64px;
+  }
 
-    #shorty-ext-img {
-        width: 61px;
-    }
+  #cargo-icon-img {
+    width: 85px;
+  }
 
-    #awake-img {
-        width: 65px;
-    }
+  #npm-icon-img {
+    width: 70px;
+  }
 
-    #ethos h2 {
-        padding-bottom: 34px;
-    }
+  #shorty-plug-img {
+    width: 62px;
+  }
 
-    #apps h2 {
-        margin: 0 0 0 60px;
-    }
+  #shorty-ext-img {
+    width: 61px;
+  }
 
+  #awake-img {
+    width: 65px;
+  }
+
+  #ethos h2 {
+    padding-bottom: 34px;
+  }
+
+  #apps h2 {
+    margin: 0 0 0 60px;
+  }
 }
