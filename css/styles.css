@@ -3,23 +3,11 @@
  *   All rights reserved.
 */
 
+@import "root_vars.css";
 @import "reset.css";
 @import "custom_fonts.css";
-
-/* CSS variables */
-:root {
-  --body-bg-color: #272930;
-  --text-color: #e6e6e6;
-  --container-bg-color: #1b1b1e;
-  --accent-color: #ff2801;
-  --hover-color: rgba(90, 174, 251, 0.2);
-  --page-margin-small: 15px;
-  --page-margin-mid: 30px;
-  --page-margin-large: 52px;
-  --code-font-regular: "JetbrainsMono-Regular", monospace;
-  --code-font-bold: "JetbrainsMono-ExtraBold", monospace;
-  --default-font: "Gotham SSm A", sans-serif;
-}
+@import "scrollbar.css";
+@import "icon_sizes.css";
 
 /* Default styles */
 body {
@@ -317,30 +305,6 @@ footer p {
     grid-template-columns: 98px 1fr;
     grid-template-rows: auto;
     height: 100px;
-  }
-
-  #developerlife-icon-img {
-    width: 64px;
-  }
-
-  #cargo-icon-img {
-    width: 85px;
-  }
-
-  #npm-icon-img {
-    width: 70px;
-  }
-
-  #shorty-plug-img {
-    width: 62px;
-  }
-
-  #shorty-ext-img {
-    width: 61px;
-  }
-
-  #awake-img {
-    width: 65px;
   }
 
   #ethos h2 {

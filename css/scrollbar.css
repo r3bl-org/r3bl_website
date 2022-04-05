@@ -1,0 +1,28 @@
+/*
+ *   Copyright (c) 2022 R3BL LLC
+ *   All rights reserved.
+*/
+
+/*Scrollbar*/
+::-webkit-scrollbar {
+  width: 13px;
+  height: 13px;
+}
+
+::-webkit-scrollbar-track {
+  border: 1px solid var(--sb-color-bg);
+  border-radius: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  /*border: 1px solid #C6C6C6;*/
+  background: var(--sb-color-accent);
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: var(--sb-color-hover);
+}
+

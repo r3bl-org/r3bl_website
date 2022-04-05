@@ -1,0 +1,23 @@
+/*
+ *   Copyright (c) 2022 R3BL LLC
+ *   All rights reserved.
+*/
+
+/* CSS variables */
+:root {
+  --body-bg-color: #272930;
+  --text-color: #e6e6e6;
+  --container-bg-color: #1b1b1e;
+  --accent-color: #ff2801;
+  --hover-color: rgba(90, 174, 251, 0.2);
+  --page-margin-small: 15px;
+  --page-margin-mid: 30px;
+  --page-margin-large: 52px;
+  --code-font-regular: "JetbrainsMono-Regular", monospace;
+  --code-font-bold: "JetbrainsMono-ExtraBold", monospace;
+  --default-font: "Gotham SSm A", sans-serif;
+  --sb-color-bg: var(--body-bg-color);
+  --sb-color-accent: #5aaefb22;
+  --sb-color-hover: #ff280122;
+}
+
