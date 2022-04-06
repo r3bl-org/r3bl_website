@@ -30,6 +30,10 @@ body img {
   margin: auto;
 }
 
+.img-body-bg {
+  background-color: var(--body-bg-color);
+}
+
 .p-tag {
   font-family: var(--code-font-bold);
   font-size: 0.8125em;
