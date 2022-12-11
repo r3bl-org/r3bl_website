@@ -7,17 +7,16 @@
 :root {
   --body-bg-color: #272930;
   --text-color: #e6e6e6;
-  --container-bg-color: #1b1b1e;
+  --container-bg-color: rgba(255,255,255,0.1);
   --accent-color: #ff2801;
-  --hover-color: rgba(90, 174, 251, 0.2);
+  --hover-color: rgba(90, 174, 251, 0.5);
   --page-margin-small: 15px;
   --page-margin-mid: 30px;
   --page-margin-large: 52px;
-  --code-font-regular: "JetbrainsMono-Regular", monospace;
-  --code-font-bold: "JetbrainsMono-ExtraBold", monospace;
+  --code-font-regular: "Victor Mono Bold", "JetbrainsMono-Regular", monospace;
+  --code-font-bold: "Victor Mono Bold", "JetbrainsMono-ExtraBold", monospace;
   --default-font: "Gotham SSm A", sans-serif;
   --sb-color-bg: var(--body-bg-color);
   --sb-color-accent: #5aaefb22;
   --sb-color-hover: #ff280122;
 }
-

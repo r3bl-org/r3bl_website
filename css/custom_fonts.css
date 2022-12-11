@@ -3,19 +3,53 @@
  *   All rights reserved.
 */
 
+/* cSpell:disable */
+
 /* Load all custom fonts. */
 @import url("font.css");
 
+/*
+// ┏━━━━━━━━━━━━━━━━┓
+// ┃ JetBrains Mono ┃
+// ┛                ┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+*/
+/* 
 @font-face {
   font-family: "JetbrainsMono-ExtraBold";
   src: url("JetBrainsMono-ExtraBold.woff2") format("woff2");
   font-weight: normal;
   font-style: normal;
 }
-
 @font-face {
   font-family: "JetbrainsMono-Regular";
   src: url("JetBrainsMono-Regular.woff2") format("woff2");
   font-weight: normal;
   font-style: normal;
+} 
+*/
+
+/*
+// ┏━━━━━━━━━━━━━┓
+// ┃ Victor Mono ┃
+// ┛             ┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+*/
+@font-face {
+  font-family: "Victor Mono";
+  src: url("/assets/victor_mono/VictorMono-Regular.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Victor Mono";
+  src: url("/assets/victor_mono/VictorMono-Italic.ttf") format("truetype");
+  font-style: italic
+}
+@font-face {
+  font-family: "Victor Mono";
+  src: url("/assets/victor_mono/VictorMono-Bold.ttf") format("truetype");
+  font-weight: 700
+}
+@font-face {
+  font-family: "Victor Mono";
+  src: url("/assets/victor_mono/VictorMono-BoldItalic.ttf") format("truetype");
+  font-weight: 700;
+  font-style: italic
 }
