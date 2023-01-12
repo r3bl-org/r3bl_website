@@ -6,10 +6,9 @@
 /* CSS variables */
 :root {
   --body-bg-color: #272930;
-  --text-color: #e6e6e6;
+  --text-color: rgba(255, 255, 255, 0.9);
   --container-bg-color: rgba(255,255,255,0.1);
   --accent-color: #ff2801;
-  --hover-color: rgba(90, 174, 251, 0.5);
   --page-margin-small: 15px;
   --page-margin-mid: 30px;
   --page-margin-large: 52px;
@@ -18,5 +17,5 @@
   --default-font: "Gotham SSm A", sans-serif;
   --sb-color-bg: var(--body-bg-color);
   --sb-color-accent: #5aaefb22;
-  --sb-color-hover: #ff280122;
+  --sb-color-hover: linear-gradient(8deg, rgba(221,3,107,1) 0%, rgba(179,14,149,1) 100%);
 }

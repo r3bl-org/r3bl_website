@@ -7,16 +7,15 @@
 ::-webkit-scrollbar {
   width: 13px;
   height: 13px;
+  background: linear-gradient(29deg, rgba(23,34,41,1) 0%, rgba(30,24,34,1) 100%);;
 }
 
 ::-webkit-scrollbar-track {
-  border: 1px solid var(--sb-color-bg);
   border-radius: 10px;
 }
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  /*border: 1px solid #C6C6C6;*/
   background: var(--sb-color-accent);
   border-radius: 10px;
 }

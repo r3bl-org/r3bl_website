@@ -11,8 +11,7 @@
 
 /* Default styles */
 body {
-  background-color: var(--body-bg-color);
-  color: var(--text-color);
+  color: rgba(255, 255, 255, 0.7);
   font-family: var(--default-font);
   font-size: 1em;
   box-sizing: border-box;
@@ -22,16 +21,13 @@ body {
 body {
   max-width: 1242px;
   margin: 0 auto;
+  background: linear-gradient(29deg, rgba(23,34,41,1) 0%, rgba(30,24,34,1) 100%);
 }
 
 body img {
   display: block;
   max-width: 100%;
   margin: auto;
-}
-
-.img-body-bg {
-  background-color: var(--body-bg-color);
 }
 
 .p-tag {
@@ -54,7 +50,6 @@ body img {
 #logo {
   width: 54px;
   height: 54px;
-  background-color: var(--text-color);
   border-radius: 0 0 4px 4px;
 }
 
@@ -102,15 +97,10 @@ p {
   margin-bottom: 1.3em;
 }
 
-.red {
-  color: var(--accent-color);
-}
-
 .app-container {
   list-style-type: none;
-  background-color: var(--container-bg-color);
+  background: var(--container-bg-color);
   height: 90px;
-  transition: background-color 0.2s;
 }
 
 .app-container a {
@@ -128,7 +118,7 @@ p {
 }
 
 .app-container:hover {
-  background-color: var(--hover-color);
+  background: linear-gradient(29deg, rgba(179, 43, 213,.2) 0%, rgba(218, 60, 142,.2) 100%);
 }
 
 #shorty-plug-img {
