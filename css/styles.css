@@ -89,7 +89,7 @@ p {
   font-family: var(--code-font-regular);
   font-size: 1em;
   line-height: 24px;
-  font-weight: lighter;
+  font-weight: 500;
   letter-spacing: -0.02em;
 }
 
