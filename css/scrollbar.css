@@ -7,7 +7,7 @@
 ::-webkit-scrollbar {
   width: 13px;
   height: 13px;
-  background: linear-gradient(29deg, rgba(23,34,41,1) 0%, rgba(30,24,34,1) 100%);;
+  background: linear-gradient(29deg, rgba(23,34,41,1) 0%, rgba(30,24,34,1) 100%);
 }
 
 ::-webkit-scrollbar-track {

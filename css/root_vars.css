@@ -7,15 +7,21 @@
 :root {
   --body-bg-color: #272930;
   --text-color: rgba(255, 255, 255, 0.9);
-  --container-bg-color: rgba(255,255,255,0.1);
+  --text-shadow-color-start: red;
+  --text-shadow-color-end: blue;
+  --container-bg-color: rgba(255, 255, 255, 0.1);
   --accent-color: #ff2801;
   --page-margin-small: 15px;
   --page-margin-mid: 30px;
   --page-margin-large: 52px;
   --code-font-regular: "Victor Mono Bold", "JetbrainsMono-Regular", monospace;
   --code-font-bold: "Victor Mono Bold", "JetbrainsMono-ExtraBold", monospace;
-  --default-font: "Gotham SSm A", sans-serif;
+  --default-font: "Victor Mono Bold", "JetbrainsMono-Regular", monospace;
   --sb-color-bg: var(--body-bg-color);
   --sb-color-accent: #5aaefb22;
-  --sb-color-hover: linear-gradient(8deg, rgba(221,3,107,1) 0%, rgba(179,14,149,1) 100%);
+  --sb-color-hover: linear-gradient(
+    8deg,
+    rgba(221, 3, 107, 1) 0%,
+    rgba(179, 14, 149, 1) 100%
+  );
 }
