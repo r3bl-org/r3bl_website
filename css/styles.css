@@ -70,8 +70,6 @@ body img {
   flex-direction: row;
   justify-content: flex-end;
   margin-right: var(--page-margin-small);
-  position: sticky;
-  top: 0;
 }
 
 #logo {
@@ -130,13 +128,13 @@ a {
 }
 
 hr {
-  margin-top: 40px;
   border: 1px solid rgba(173, 49, 230, 0.3);
   border-bottom: 1px;
 }
 
 .emoji {
   color: var(--text-color-white);
+  font-size: 1.5em;
 }
 
 .space {
@@ -215,6 +213,41 @@ hr {
   margin-bottom: 10px;
 }
 
+.email-box {
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+}
+
+.email-box label {
+  margin-right: 10px;
+}
+
+@media screen and (max-width: 550px) {
+  .waitlist-email-subscribe-container {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+  .email-box-container {
+    margin-bottom: 10px;
+  }
+
+  .email-box {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .email-box label {
+    margin-bottom: 10px;
+  }
+
+  .button-waitlist {
+    /* margin-left: 47.5px; */
+    width: 204px;
+  }
+}
+/* ------- end r3bl-cmdr waitlist Mailchimp styling */
+
 .email-box-container {
   margin-right: 10px;
 }
@@ -267,17 +300,18 @@ hr {
 
 /* ------ end waitlist styling */
 
-.funding-container {
+.border-container {
   display: flex;
   flex-direction: column;
   border: 1px solid rgba(173, 49, 230, 0.3);
   border-radius: var(--border-radius);
+  margin-bottom: 30px;
   margin-top: 30px;
   padding: 20px;
   transition: border 0.3s ease-in-out;
 }
 
-.funding-container:hover {
+.border-container:hover {
   border: 1px solid rgba(173, 49, 230, 0.6);
 }
 
@@ -287,6 +321,21 @@ hr {
 
 .apps h2 {
   margin: 0 var(--page-margin-small);
+}
+
+.sticky-sidebar {
+  position: sticky;
+  top: 0;
+}
+
+/* Videos */
+
+.embedded-video {
+  min-width: 200px;
+  width: 560px;
+  height: 315px;
+
+  max-width: 100%;
 }
 
 /* Footer */
