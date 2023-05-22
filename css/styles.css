@@ -70,6 +70,8 @@ body img {
   flex-direction: row;
   justify-content: flex-end;
   margin-right: var(--page-margin-small);
+  position: sticky;
+  top: 0;
 }
 
 #logo {
@@ -122,6 +124,21 @@ p {
   letter-spacing: -0.02em;
 }
 
+a {
+  color: var(--link-color);
+  text-decoration: none;
+}
+
+hr {
+  margin-top: 40px;
+  border: 1px solid rgba(173, 49, 230, 0.3);
+  border-bottom: 1px;
+}
+
+.emoji {
+  color: var(--text-color-white);
+}
+
 .space {
   margin-bottom: 1.3em;
 }
@@ -154,6 +171,12 @@ p {
   );
 }
 
+.two-column-ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
 #shorty-plug-img {
   width: 54px;
   grid-column: 1/2;
@@ -180,15 +203,89 @@ p {
   grid-row: 1/2;
 }
 
-#ethos {
+.left-column {
   margin: 0 var(--page-margin-small) 20px var(--page-margin-small);
 }
 
-#ethos h2 {
+/* Join r3bl-cmdr waitlist Mailchimp styling */
+.waitlist-email-subscribe-container {
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 10px;
+}
+
+.email-box-container {
+  margin-right: 10px;
+}
+
+.email-box-container input {
+  border: none;
+  border-radius: var(--border-radius);
+  height: 25px;
+  padding-left: 8px;
+}
+
+.email-box-container input:focus {
+  outline: none;
+  outline-offset: -3px;
+}
+
+.button-waitlist {
+  align-items: center;
+  /* background: linear-gradient(
+    180deg,
+    rgba(179, 43, 213, 1) 0%,
+    rgba(218, 60, 142, 1) 100%
+  ); */
+  background-image: linear-gradient(
+    -45deg,
+    rgba(221, 3, 107, 1) 0%,
+    rgba(179, 14, 149, 1) 100%
+  );
+  border: none;
+  border-radius: var(--border-radius);
+  color: var(--text-color);
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  font-family: var(--default-font);
+  font-size: 1em;
+  font-weight: 700;
+  padding: 5px 10px;
+  transition: "box-shadow" 1s ease-in-out;
+}
+
+.button-waitlist:hover {
+  box-shadow: 0px 1px 4px black;
+}
+
+.helper_text {
+  display: block;
+  font-size: 0.75em;
+}
+
+/* ------ end waitlist styling */
+
+.funding-container {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid rgba(173, 49, 230, 0.3);
+  border-radius: var(--border-radius);
+  margin-top: 30px;
+  padding: 20px;
+  transition: border 0.3s ease-in-out;
+}
+
+.funding-container:hover {
+  border: 1px solid rgba(173, 49, 230, 0.6);
+}
+
+.left-column h2 {
   padding-bottom: 27px;
 }
 
-#apps h2 {
+.apps h2 {
   margin: 0 var(--page-margin-small);
 }
 
@@ -255,11 +352,11 @@ footer p {
     margin: 0 var(--page-margin-mid);
   }
 
-  #ethos {
+  .left-column {
     margin: 0 var(--page-margin-mid) 20px var(--page-margin-mid);
   }
 
-  #apps h2 {
+  .apps h2 {
     margin: 0 var(--page-margin-mid);
   }
 
@@ -268,7 +365,7 @@ footer p {
   }
 
   .app-container {
-    border-radius: 3px;
+    border-radius: var(--border-radius);
   }
 }
 
@@ -290,16 +387,16 @@ footer p {
     margin: 0 var(--page-margin-large);
   }
 
-  #ethos {
+  .left-column {
     margin: 0 var(--page-margin-large) 20px var(--page-margin-large);
   }
 
-  #apps h2 {
+  .apps h2 {
     margin: 0 var(--page-margin-large);
   }
 
   ul {
-    margin: 0 37px;
+    margin: 0 var(--page-margin-large);
   }
 }
 
@@ -314,17 +411,17 @@ footer p {
     flex-direction: row;
   }
 
-  #ethos {
-    width: 50%;
+  .left-column {
+    /* width: 50%; */
     margin: 0 0 20px var(--page-margin-large);
   }
 
   ul {
-    margin: 0 0 0 44px;
+    /* margin: 0 0 0 100px; */
   }
 
   .app-container {
-    min-width: 488px;
+    min-width: 399px;
     height: 100px;
   }
 
@@ -334,11 +431,11 @@ footer p {
     height: 100px;
   }
 
-  #ethos h2 {
+  .left-column h2 {
     padding-bottom: 34px;
   }
 
-  #apps h2 {
-    margin: 0 0 0 60px;
+  .apps h2 {
+    /* margin: 0 0 0 100px; */
   }
 }
