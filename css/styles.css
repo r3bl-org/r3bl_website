@@ -137,8 +137,12 @@ hr {
   font-size: 1.5em;
 }
 
-.space {
+.margin-bottom {
   margin-bottom: 1.3em;
+}
+
+.margin-top {
+  margin-top: 1.7em;
 }
 
 .app-container {
@@ -228,6 +232,7 @@ hr {
     align-items: flex-start;
     flex-direction: column;
   }
+
   .email-box-container {
     margin-bottom: 10px;
   }
@@ -242,8 +247,8 @@ hr {
   }
 
   .button-waitlist {
-    /* margin-left: 47.5px; */
-    width: 204px;
+    min-width: 204px;
+    max-width: fit-content;
   }
 }
 /* ------- end r3bl-cmdr waitlist Mailchimp styling */
@@ -266,11 +271,6 @@ hr {
 
 .button-waitlist {
   align-items: center;
-  /* background: linear-gradient(
-    180deg,
-    rgba(179, 43, 213, 1) 0%,
-    rgba(218, 60, 142, 1) 100%
-  ); */
   background-image: linear-gradient(
     -45deg,
     rgba(221, 3, 107, 1) 0%,
@@ -285,7 +285,9 @@ hr {
   font-family: var(--default-font);
   font-size: 1em;
   font-weight: 700;
-  padding: 5px 10px;
+  height: 28px;
+  justify-content: center;
+  padding: 0 10px;
   transition: "box-shadow" 1s ease-in-out;
 }
 
@@ -297,7 +299,6 @@ hr {
   display: block;
   font-size: 0.75em;
 }
-
 /* ------ end waitlist styling */
 
 .border-container {
@@ -334,8 +335,11 @@ hr {
   min-width: 200px;
   width: 560px;
   height: 315px;
-
   max-width: 100%;
+}
+
+.who-we-are ul {
+  margin: 0;
 }
 
 /* Footer */
@@ -461,12 +465,7 @@ footer p {
   }
 
   .left-column {
-    /* width: 50%; */
     margin: 0 0 20px var(--page-margin-large);
-  }
-
-  ul {
-    /* margin: 0 0 0 100px; */
   }
 
   .app-container {
@@ -482,9 +481,5 @@ footer p {
 
   .left-column h2 {
     padding-bottom: 34px;
-  }
-
-  .apps h2 {
-    /* margin: 0 0 0 100px; */
   }
 }
