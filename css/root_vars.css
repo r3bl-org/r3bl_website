@@ -9,9 +9,15 @@
   --border-radius: 4px;
   --text-color: rgba(255, 255, 255, 0.9);
   --text-color-white: white;
-  --text-shadow-color-start: red;
-  --text-shadow-color-end: blue;
+
+  --text-shadow-color: rgba(221, 3, 107, 0.8);
+  --text-shadow-color-2: rgba(16, 242, 227, 0.7);
+
+  /* link colors */
   --link-color: rgba(221, 3, 107, 1);
+  --link-color-underline: rgba(221, 3, 107, 0.5);
+  --link-color-underline-hover: rgba(69, 254, 60, 0.4);
+
   --container-bg-color: rgba(255, 255, 255, 0.1);
   --accent-color: #ff2801;
   --page-margin-small: 15px;
