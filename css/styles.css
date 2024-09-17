@@ -65,7 +65,11 @@ body img {
   letter-spacing: 0em;
 }
 
-/* Header styling */
+/*
+Header styling
+  - the defaults are what apply to the smallest width
+  - the media queries are for larger widths, which override the defaults
+*/
 
 .header-container {
   display: flex;
@@ -76,16 +80,18 @@ body img {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  align-items: center;
+  align-items: flex-start;
   width: 100%;
+  padding-left: var(--page-margin-small);
 }
 
 .header-flex-cell {
+  font-size: 1.3em;
   justify-content: space-between;
   align-items: center;
   padding-top: calc(var(--page-margin-small) / 4);
   padding-bottom: calc(var(--page-margin-small) / 4);
-  text-shadow: 0 0px 15px var(--text-shadow-color-2);
+  text-shadow: 0 0px 20px var(--text-shadow-color-2);
 }
 
 /* Logo styling */
@@ -452,6 +458,10 @@ footer p {
     margin-right: var(--page-margin-mid);
   }
 
+  .header-table {
+    padding-left: var(--page-margin-mid);
+  }
+
   .header-flex-cell {
     padding-top: calc(var(--page-margin-small) / 2);
     padding-bottom: calc(var(--page-margin-small) / 2);
@@ -501,6 +511,7 @@ footer p {
     flex-direction: row;
     gap: var(--page-margin-small);
     padding-left: var(--page-margin-large);
+    align-items: center;
   }
 
   .header-flex-cell {
