@@ -60,10 +60,13 @@
             <p class="margin-bottom">
               We are reimagining the <a target="_blank"
               href="https://developerlife.com/2024/08/20/tty-linux-async-rust/">terminal</a>
-              for the era of AI coding agents and cloud-first workflows. We're building a
-              suite of terminal-native apps (that all work seamlessly over SSH) — including
-              collaborative "Google Docs meets Jupyter notebooks" for Markdown and virtual
-              terminal multiplexers — focused on enhancing <font color="#07DE99">d</font
+              for the era of AI coding agents and cloud-first workflows. Built on top of our
+              <a href="#open-source-software">open source</a> foundation (available today),
+              we're building an upcoming closed source suite of terminal-native apps (that
+              all work seamlessly over SSH). Products like local-first collaborative "Google
+              Docs meets Jupyter notebooks" for Markdown and virtual terminal
+              multiplexers. All focused on data sovereignty, privacy, local-first
+              computing, while enhancing <font color="#07DE99">d</font
               ><font color="#08E195">e</font><font color="#0AE491">v</font
               ><font color="#0CE68C">e</font><font color="#0DE988">l</font
               ><font color="#0FEB84">o</font><font color="#11ED80">p</font
@@ -133,10 +136,12 @@
               <a target="_blank" href="https://crates.io/users/nazmulidris">crates.io</a>).
               Its core library crate,
               <a target="_blank" href="https://crates.io/crates/r3bl_tui"><code>r3bl_tui</code></a>,
-              consolidates our full-TUI engine (Elm-style state management, Flexbox layout,
-              CSS-like styling, and React/JSX-like declarative macros), partial-TUI / async
-              readline, terminal / PTY virtualization, and zero-copy Markdown parsing into
-              a single unified crate.
+              consolidates our strictly type-safe, correctness-focused TUI engine (custom
+              CSS/Flexbox layout engine, custom rendering engine, Elm-style state
+              management, React/JSX-like declarative macros, and a full-featured Markdown
+              editor component with custom Markdown parser and syntax highlighting),
+              virtual terminal emulation (VTE), async readline, and terminal / PTY
+              virtualization into a single unified crate.
             </p>
             <p class="margin-bottom">
               Here are examples of what you can build using the TUI engine:
