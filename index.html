@@ -58,12 +58,12 @@
               developers are users too <span class="emoji">❤️</span>.
             </p>
             <p class="margin-bottom">
-              We are working on our first product, which will be like "Google Docs" meets
-              "Jupyter notebooks" for Markdown. It will be our
-              first <a target="_blank"
+              We are reimagining the <a target="_blank"
               href="https://developerlife.com/2024/08/20/tty-linux-async-rust/">terminal</a>
-              based app (which also works over SSH) to be launched as part of a suite
-              of apps focused on enhancing <font color="#07DE99">d</font
+              for the era of AI coding agents and cloud-first workflows. We're building a
+              suite of terminal-native apps (that all work seamlessly over SSH) — including
+              collaborative "Google Docs meets Jupyter notebooks" for Markdown and virtual
+              terminal multiplexers — focused on enhancing <font color="#07DE99">d</font
               ><font color="#08E195">e</font><font color="#0AE491">v</font
               ><font color="#0CE68C">e</font><font color="#0DE988">l</font
               ><font color="#0FEB84">o</font><font color="#11ED80">p</font
@@ -129,10 +129,14 @@
             <p class="margin-bottom">
               <a target="_blank"
               href="https://github.com/r3bl-org/r3bl-open-core"><code>r3bl-open-core</code></a>
-              is our Rust open source project. It includes lots of
-              <a target="_blank" href="https://crates.io/search?q=r3bl">libraries</a>
-              including <span class="italic-text">r3bl_tui</span>, <span class="italic-text">r3bl_tuify</span>,
-              <span class="italic-text">r3bl_terminal_async</span> and <span class="italic-text">r3bl_ansi_color</span>
+              is our Rust open source monorepo (2.7M+ downloads on
+              <a target="_blank" href="https://crates.io/users/nazmulidris">crates.io</a>).
+              Its core library crate,
+              <a target="_blank" href="https://crates.io/crates/r3bl_tui"><code>r3bl_tui</code></a>,
+              consolidates our full-TUI engine (Elm-style state management, Flexbox layout,
+              CSS-like styling, and React/JSX-like declarative macros), partial-TUI / async
+              readline, terminal / PTY virtualization, and zero-copy Markdown parsing into
+              a single unified crate.
             </p>
             <p class="margin-bottom">
               Here are examples of what you can build using the TUI engine:
