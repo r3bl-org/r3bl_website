@@ -23,9 +23,9 @@
   --page-margin-small: 15px;
   --page-margin-mid: 30px;
   --page-margin-large: 52px;
-  --code-font-regular: "Victor Mono Bold", "JetbrainsMono-Regular", monospace;
-  --code-font-bold: "Victor Mono Bold", "JetbrainsMono-ExtraBold", monospace;
-  --default-font: "Victor Mono Bold", "JetbrainsMono-Regular", monospace;
+  --code-font-regular: "Fantasque Sans Mono", monospace;
+  --code-font-bold: "Fantasque Sans Mono", monospace;
+  --default-font: "Fantasque Sans Mono", monospace;
   --sb-color-bg: var(--body-bg-color);
   --sb-color-accent: #5aaefb22;
   --sb-color-hover: linear-gradient(

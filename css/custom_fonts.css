@@ -29,27 +29,38 @@
 */
 
 /*
-// ┏━━━━━━━━━━━━━┓
-// ┃ Victor Mono ┃
-// ┛             ┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+// ┏━━━━━━━━━━━━━━━━━━━━━┓
+// ┃ Fantasque Sans Mono ┃
+// ┛                     ┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 */
 @font-face {
-  font-family: "Victor Mono";
-  src: url("/assets/victor_mono/VictorMono-Regular.ttf") format("truetype");
+  font-family: "Fantasque Sans Mono";
+  src: url("../fonts/FantasqueSansMNerdFontPatchedWithFiraCode-Regular.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
 }
+
 @font-face {
-  font-family: "Victor Mono";
-  src: url("/assets/victor_mono/VictorMono-Italic.ttf") format("truetype");
-  font-style: italic
-}
-@font-face {
-  font-family: "Victor Mono";
-  src: url("/assets/victor_mono/VictorMono-Bold.ttf") format("truetype");
-  font-weight: 700
-}
-@font-face {
-  font-family: "Victor Mono";
-  src: url("/assets/victor_mono/VictorMono-BoldItalic.ttf") format("truetype");
+  font-family: "Fantasque Sans Mono";
+  src: url("../fonts/FantasqueSansMNerdFontPatchedWithFiraCode-Bold.woff2") format("woff2");
   font-weight: 700;
-  font-style: italic
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Fantasque Sans Mono";
+  src: url("../fonts/FantasqueSansMNerdFontPatchedWithFiraCode-Italic.woff2") format("woff2");
+  font-weight: 400;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Fantasque Sans Mono";
+  src: url("../fonts/FantasqueSansMNerdFontPatchedWithFiraCode-BoldItalic.woff2") format("woff2");
+  font-weight: 700;
+  font-style: italic;
+  font-display: swap;
 }

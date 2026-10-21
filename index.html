@@ -1,180 +1,246 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="stylesheet" href="css/styles.css" type="text/css" />
-    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>R3BL</title>
-    <!-- Google tag (gtag.js) -->
-    <script
-      async
-      src="https://www.googletagmanager.com/gtag/js?id=G-S26CKQS9Y4"
-    ></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag() {
-        dataLayer.push(arguments);
-      }
-      gtag("js", new Date());
+    <head>
+        <meta charset="UTF-8" />
+        <link rel="stylesheet" href="css/styles.css" type="text/css" />
+        <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>R3BL</title>
+        <!-- Google tag (gtag.js) -->
+        <script
+            async
+            src="https://www.googletagmanager.com/gtag/js?id=G-S26CKQS9Y4"
+        ></script>
+        <script>
+            window.dataLayer = window.dataLayer || []
+            function gtag() {
+                dataLayer.push(arguments)
+            }
+            gtag("js", new Date())
 
-      gtag("config", "G-S26CKQS9Y4");
-    </script>
-  </head>
-  <body>
-    <header class="header-container">
-      <div class="header-table">
-        <div class="header-flex-cell"><a href="#products">Products</a></div>
-        <div class="header-flex-cell"><a href="#open-source-software">Open source software</a></div>
-        <div class="header-flex-cell"><a href="#our-ethos">Our ethos</a></div>
-      </div>
-      <figure class="logo">
-        <a href="index.html">
-          <img src="images/logo.svg" alt="Logo"/>
-        </a>
-      </figure>
-    </header>
+            gtag("config", "G-S26CKQS9Y4")
+        </script>
+    </head>
+    <body>
+        <header class="header-container">
+            <div class="header-table">
+                <div class="header-flex-cell"><a href="#products">Products</a></div>
+                <div class="header-flex-cell">
+                    <a href="#open-source-software">Open source software</a>
+                </div>
+                <div class="header-flex-cell"><a href="#our-ethos">Our ethos</a></div>
+            </div>
+            <figure class="logo">
+                <a href="index.html">
+                    <img src="images/logo.svg" alt="Logo" />
+                </a>
+            </figure>
+        </header>
 
-    <main>
-      <div class="intro-text">
-        <h1>
-          We craft <a target="_blank" href="https://www.inkandswitch.com/local-first/">local-first</a>
-          productivity software for
-          <font color="#FC592A">d</font><font color="#FC552D">e</font
-          ><font color="#FD5130">v</font><font color="#FE4D34">e</font
-          ><font color="#FE4937">l</font><font color="#FE463A">o</font
-          ><font color="#FE423E">p</font><font color="#FE3E42">e</font
-          ><font color="#FE3B45">r</font><font color="#FE3749">s</font>
-        </h1>
-      </div>
+        <main>
+            <div class="intro-text">
+                <h1>
+                    We craft
+                    <a target="_blank" href="https://www.inkandswitch.com/local-first/"
+                        >local-first</a
+                    >
+                    productivity software for
+                    <font color="#FC592A">d</font><font color="#FC552D">e</font
+                    ><font color="#FD5130">v</font><font color="#FE4D34">e</font
+                    ><font color="#FE4937">l</font><font color="#FE463A">o</font
+                    ><font color="#FE423E">p</font><font color="#FE3E42">e</font
+                    ><font color="#FE3B45">r</font><font color="#FE3749">s</font>
+                </h1>
+            </div>
 
-      <section class="all-info">
-        <div class="left-column">
-          <section id="products">
-            <h2><span class="emoji">🖥️</span> Products</h2>
-            <p class="margin-bottom">
-              Our mission is to elevate the UX for developer products and make developers
-              who use them, happier and more productive in their daily lives. After all,
-              developers are users too <span class="emoji">❤️</span>.
-            </p>
-            <p class="margin-bottom">
-              Despite the massive rise of autonomous coding agents and remote cloud VM
-              administration, <a target="_blank"
-              href="https://developerlife.com/2024/08/20/tty-linux-async-rust/">terminal</a>
-              UI and foundational primitives have largely stagnated since the 1990s.
-            </p>
-            <p class="margin-bottom">
-              We are reimagining the terminal for this era, to address the needs LLM
-              harnesses and ergonomic remote cloud VM admin.
-            </p>
-            <p class="margin-bottom">
-              The first thing we are doing is creating better primitives (<a
-              href="#open-source-software"><code>r3bl-open-core</code> aka
-              <code>ROC</code></a>) from the ground up in Rust (2.7M+ crates.io downloads) to
-              bridge the gap in terminal capabilities since the 90's.
-            </p>
-            <p class="margin-bottom">
-              Available today, ROC provides a strictly type-safe, correctness-focused
-              async TUI engine, headless virtual terminal emulation (VTE), low-latency
-              PTY/TTY runtime, CLI/TUI apps (<code>edi</code>, <code>giti</code>), MCP
-              servers, and IDE/browser extensions.
-            </p>
-            <p class="margin-bottom">
-              Built on top of this open-source foundation, we're building an upcoming
-              closed-source suite of terminal apps at r3bl.com (which all work seamlessly
-              over SSH). This includes a local-first collaborative "Google Docs meets
-              Jupyter notebooks" for Markdown and virtual terminal multiplexers.
-            </p>
-            <p class="margin-bottom">
-              Our focus is on preserving data sovereignty, privacy, and enabling
-              local-first computing, while enhancing <font color="#07DE99">d</font
-              ><font color="#08E195">e</font><font color="#0AE491">v</font
-              ><font color="#0CE68C">e</font><font color="#0DE988">l</font
-              ><font color="#0FEB84">o</font><font color="#11ED80">p</font
-              ><font color="#14EF7C">e</font><font color="#16F177">r</font
-              ><font color="#18F373"> </font><font color="#1BF56F">p</font
-              ><font color="#1DF66B">r</font><font color="#20F867">o</font
-              ><font color="#23F962">d</font><font color="#26FA5E">u</font
-              ><font color="#29FB5A">c</font><font color="#2CFC56">t</font
-              ><font color="#2FFD52">i</font><font color="#33FD4E">v</font
-              ><font color="#36FE4A">i</font><font color="#3AFE47">t</font
-              ><font color="#3DFE43">y</font>, <font color="#45FE3C"> </font
-              ><font color="#48FE38">k</font><font color="#4CFE35">n</font
-              ><font color="#50FD31">o</font><font color="#54FD2E">w</font
-              ><font color="#58FC2B">l</font><font color="#5CFB28">e</font
-              ><font color="#60FA25">d</font><font color="#64F922">g</font
-              ><font color="#68F71F">e</font><font color="#6DF61C"> </font
-              ><font color="#71F41A">c</font><font color="#75F217">a</font
-              ><font color="#79F015">p</font><font color="#7DEE13">t</font
-              ><font color="#82EC10">u</font><font color="#86EA0E">r</font
-              ><font color="#8AE80D">e</font><font color="#8EE50B"> </font
-              ><font color="#93E309">&amp;</font><font color="#97E008"> </font
-              ><font color="#9BDD06">s</font><font color="#9FDA05">h</font
-              ><font color="#A3D704">a</font><font color="#A7D403">r</font
-              ><font color="#ABD102">i</font><font color="#AFCE02">n</font
-              ><font color="#B3CA01">g</font>, and <font color="#C9B401">w</font
-              ><font color="#CCB102">o</font><font color="#D0AD02">r</font
-              ><font color="#D3A903">k</font><font color="#D6A504">f</font
-              ><font color="#D9A105">l</font><font color="#DC9C06">o</font
-              ><font color="#DF9807">w</font><font color="#E29409"> </font
-              ><font color="#E4900A">m</font><font color="#E78C0C">a</font
-              ><font color="#E9880E">n</font><font color="#EC8310">a</font
-              ><font color="#EE7F12">g</font><font color="#F07B14">e</font
-              ><font color="#F27716">m</font><font color="#F37219">e</font
-              ><font color="#F56E1B">n</font><font color="#F76A1E">t</font>.
-            </p>
-          </section>
+            <section class="all-info">
+                <div class="left-column">
+                    <section id="products">
+                        <h2><span class="emoji">🖥️</span> Products</h2>
+                        <p class="margin-bottom">
+                            Our mission is to elevate the UX for developer products and
+                            make developers who use them, happier and more productive in
+                            their daily lives. After all, developers are users too
+                            <span class="emoji">❤️</span>.
+                        </p>
+                        <p class="margin-bottom">
+                            Despite the massive rise of autonomous coding agents and
+                            remote cloud VM administration,
+                            <a
+                                target="_blank"
+                                href="https://developerlife.com/2024/08/20/tty-linux-async-rust/"
+                                >terminal</a
+                            >
+                            UI and foundational primitives have largely stagnated since
+                            the 1990s.
+                        </p>
+                        <p class="margin-bottom">
+                            We are reimagining the terminal for this era, to address the
+                            needs LLM harnesses and ergonomic remote cloud VM admin.
+                        </p>
+                        <p class="margin-bottom">
+                            The first thing we are doing is creating better primitives (<a
+                                href="#open-source-software"
+                                ><code>r3bl-open-core</code> aka <code>ROC</code></a
+                            >) from the ground up in Rust (2.7M+ crates.io downloads) to
+                            bridge the gap in terminal capabilities since the 90's.
+                        </p>
+                        <p class="margin-bottom">
+                            Available today, ROC provides a strictly type-safe,
+                            correctness-focused async TUI engine, headless virtual
+                            terminal emulation (VTE), low-latency PTY/TTY runtime, CLI/TUI
+                            apps (<code>edi</code>, <code>giti</code>), MCP servers, and
+                            IDE/browser extensions.
+                        </p>
+                        <p class="margin-bottom">
+                            Built on top of this open-source foundation, we're building an
+                            upcoming closed-source suite of terminal apps at r3bl.com
+                            (which all work seamlessly over SSH). This includes a
+                            local-first collaborative "Google Docs meets Jupyter
+                            notebooks" for Markdown and virtual terminal multiplexers.
+                        </p>
+                        <p class="margin-bottom">
+                            Our focus is on preserving <font color="#E19508">d</font
+                            ><font color="#E4900A">a</font><font color="#E78C0C">t</font
+                            ><font color="#E9880D">a</font><font color="#EB840F"> </font
+                            ><font color="#ED8011">s</font><font color="#F07B14">o</font
+                            ><font color="#F17716">v</font><font color="#F37318">e</font
+                            ><font color="#F56F1B">r</font><font color="#F66B1E">e</font
+                            ><font color="#F86620">i</font><font color="#F96223">g</font
+                            ><font color="#FA5E26">n</font><font color="#FB5A29">t</font
+                            ><font color="#FC562C">y</font><font color="#FD5230">,</font
+                            ><font color="#FE4E33"> </font><font color="#FE4A36">p</font
+                            ><font color="#FE463A">r</font><font color="#FE433D">i</font
+                            ><font color="#FE3F41">v</font><font color="#FE3B45">a</font
+                            ><font color="#FE3849">c</font><font color="#FE344C">y</font
+                            ><font color="#FD3150">,</font><font color="#FD2E54"> </font
+                            ><font color="#FC2B58">a</font><font color="#FB275C">n</font
+                            ><font color="#FA2460">d</font><font color="#F82264"> </font
+                            ><font color="#F71F69">e</font><font color="#F61C6D">n</font
+                            ><font color="#F41971">a</font><font color="#F21775">b</font
+                            ><font color="#F01579">l</font><font color="#EE127E">i</font
+                            ><font color="#EC1082">n</font><font color="#EA0E86">g</font
+                            ><font color="#E80C8A"> </font><font color="#E50B8F">l</font
+                            ><font color="#E30993">o</font><font color="#E00897">c</font
+                            ><font color="#DD069B">a</font><font color="#DA059F">l</font
+                            ><font color="#D704A3">-</font><font color="#D403A7">f</font
+                            ><font color="#D102AB">i</font><font color="#CE02AF">r</font
+                            ><font color="#CA01B3">s</font><font color="#C701B7">t</font
+                            ><font color="#C301BB"> </font><font color="#C001BE">c</font
+                            ><font color="#BC01C2">o</font><font color="#B801C6">m</font
+                            ><font color="#B401C9">p</font><font color="#B002CD">u</font
+                            ><font color="#AC02D0">t</font><font color="#A803D3">i</font
+                            ><font color="#A404D6">n</font><font color="#A005D9">g</font>,
+                            while enhancing <font color="#07DE99">d</font
+                            ><font color="#08E195">e</font><font color="#0AE491">v</font
+                            ><font color="#0CE68C">e</font><font color="#0DE988">l</font
+                            ><font color="#0FEB84">o</font><font color="#11ED80">p</font
+                            ><font color="#14EF7C">e</font><font color="#16F177">r</font
+                            ><font color="#18F373"> </font><font color="#1BF56F">p</font
+                            ><font color="#1DF66B">r</font><font color="#20F867">o</font
+                            ><font color="#23F962">d</font><font color="#26FA5E">u</font
+                            ><font color="#29FB5A">c</font><font color="#2CFC56">t</font
+                            ><font color="#2FFD52">i</font><font color="#33FD4E">v</font
+                            ><font color="#36FE4A">i</font><font color="#3AFE47">t</font
+                            ><font color="#3DFE43">y</font>, <font color="#45FE3C"> </font
+                            ><font color="#48FE38">k</font><font color="#4CFE35">n</font
+                            ><font color="#50FD31">o</font><font color="#54FD2E">w</font
+                            ><font color="#58FC2B">l</font><font color="#5CFB28">e</font
+                            ><font color="#60FA25">d</font><font color="#64F922">g</font
+                            ><font color="#68F71F">e</font><font color="#6DF61C"> </font
+                            ><font color="#71F41A">c</font><font color="#75F217">a</font
+                            ><font color="#79F015">p</font><font color="#7DEE13">t</font
+                            ><font color="#82EC10">u</font><font color="#86EA0E">r</font
+                            ><font color="#8AE80D">e</font><font color="#8EE50B"> </font
+                            ><font color="#93E309">&amp;</font
+                            ><font color="#97E008"> </font><font color="#9BDD06">s</font
+                            ><font color="#9FDA05">h</font><font color="#A3D704">a</font
+                            ><font color="#A7D403">r</font><font color="#ABD102">i</font
+                            ><font color="#AFCE02">n</font><font color="#B3CA01">g</font>,
+                            and <font color="#C9B401">w</font
+                            ><font color="#CCB102">o</font><font color="#D0AD02">r</font
+                            ><font color="#D3A903">k</font><font color="#D6A504">f</font
+                            ><font color="#D9A105">l</font><font color="#DC9C06">o</font
+                            ><font color="#DF9807">w</font><font color="#E29409"> </font
+                            ><font color="#E4900A">m</font><font color="#E78C0C">a</font
+                            ><font color="#E9880E">n</font><font color="#EC8310">a</font
+                            ><font color="#EE7F12">g</font><font color="#F07B14">e</font
+                            ><font color="#F27716">m</font><font color="#F37219">e</font
+                            ><font color="#F56E1B">n</font><font color="#F76A1E">t</font>.
+                        </p>
+                    </section>
 
-          <hr />
+                    <hr />
 
-          <section id="open-source-software">
-            <h2><span class="emoji">🌍</span> Open source software</h2>
-            <p class="margin-bottom">
-              <code>
-                <a target="_blank"
-                href="https://github.com/r3bl-org/r3bl-open-core/tree/main/cmdr#installation">r3bl-cmdr</a>
-              </code> is our open source command line (CLI and TUI) collection of utility apps that
-              improve developer productivity. It is built using our
-              <a target="_blank" href="https://github.com/r3bl-org/r3bl-open-core/">
-              own TUI engine</a> in Rust. Currently it includes two apps:
-              <ul class="margin-bottom custom-list">
-                <li><span class="bold-text">edi</span> - Beautiful Markdown editor</li>
-                <li><span class="bold-text">giti</span> - Command line assistant to help make <code>git</code> easier to work with.</li>
-              </ul>
-              <p class="margin-bottom">
-                Here's a sneak peak at the UI:
-              </p>
-              <img
-                src="https://user-images.githubusercontent.com/2966499/234949476-98ad595a-3b72-497f-8056-84b6acda80e2.gif"
-                class="margin-bottom"
-              />
-            </p>
+                    <section id="open-source-software">
+                        <h2><span class="emoji">🌍</span> Open source software</h2>
 
-            <p class="margin-bottom">
-              <a target="_blank"
-              href="https://github.com/r3bl-org/r3bl-open-core"><code>r3bl-open-core</code></a>
-              is our Rust open source monorepo (2.7M+ downloads on
-              <a target="_blank" href="https://crates.io/users/nazmulidris">crates.io</a>).
-              Its core library crate,
-              <a target="_blank" href="https://crates.io/crates/r3bl_tui"><code>r3bl_tui</code></a>,
-              consolidates our strictly type-safe, correctness-focused TUI engine (custom
-              CSS/Flexbox layout engine, custom rendering engine, Elm-style state
-              management, React/JSX-like declarative macros, and a full-featured Markdown
-              editor component with custom Markdown parser and syntax highlighting),
-              virtual terminal emulation (VTE), async readline, and terminal / PTY
-              virtualization into a single unified crate.
-            </p>
-            <p class="margin-bottom">
-              Here are examples of what you can build using the TUI engine:
-            </p>
-            <img
-              src="https://user-images.githubusercontent.com/2966499/233799311-210b887e-0aa6-470a-bcea-ee8e0e3eb019.gif"
-              class="margin-bottom"
-            />
-          </section>
+                        <p class="margin-bottom">
+                            <a
+                                target="_blank"
+                                href="https://github.com/r3bl-org/r3bl-open-core"
+                                ><code>ROC</code></a
+                            >
+                            is our Rust open source monorepo (2.7M+ downloads on
+                            <a target="_blank" href="https://crates.io/users/nazmulidris"
+                                >crates.io</a
+                            >). Its core library crate,
+                            <a target="_blank" href="https://crates.io/crates/r3bl_tui"
+                                ><code>r3bl_tui</code></a
+                            >, consolidates our strictly type-safe, correctness-focused
+                            TUI engine (custom CSS/Flexbox layout engine, custom rendering
+                            engine, Elm-style state management, React/JSX-like declarative
+                            macros, and a full-featured Markdown editor component with
+                            custom Markdown parser and syntax highlighting), virtual
+                            terminal emulation (VTE), async readline, and terminal / PTY
+                            virtualization into a single unified crate.
+                        </p>
+                        <p class="margin-bottom">
+                            Here are examples of what you can build using the TUI engine:
+                        </p>
+                        <img
+                            src="https://user-images.githubusercontent.com/2966499/233799311-210b887e-0aa6-470a-bcea-ee8e0e3eb019.gif"
+                            class="margin-bottom"
+                        />
 
+                        <p class="margin-bottom">
+                            <code>
+                                <a
+                                    target="_blank"
+                                    href="https://github.com/r3bl-org/r3bl-open-core/tree/main/cmdr#installation"
+                                    >r3bl-cmdr</a
+                                >
+                            </code>
+                            is our open source command line (CLI and TUI) collection of
+                            utility apps that improve developer productivity. It is built
+                            using our
+                            <a
+                                target="_blank"
+                                href="https://github.com/r3bl-org/r3bl-open-core/"
+                            >
+                                own TUI engine</a
+                            >
+                            in Rust. Currently it includes two apps:
+                        </p>
+                        <ul class="margin-bottom custom-list">
+                            <li>
+                                <span class="bold-text">edi</span> - Beautiful Markdown
+                                editor
+                            </li>
+                            <li>
+                                <span class="bold-text">giti</span> - Command line
+                                assistant to help make <code>git</code> easier to work
+                                with.
+                            </li>
+                        </ul>
+                        <p class="margin-bottom">Here's a sneak peak at the UI:</p>
+                        <img
+                            src="https://user-images.githubusercontent.com/2966499/234949476-98ad595a-3b72-497f-8056-84b6acda80e2.gif"
+                            class="margin-bottom"
+                        />
+                    </section>
 
-          <!-- <section id="waitlist">
+                    <!-- <section id="waitlist">
             <div class="border-container">
               <h3 class="margin-bottom">Join our waitlist and get notified about product updates</h3>
               <p>
@@ -183,193 +249,230 @@
             </div>
           </section> -->
 
-          <section id="contribute">
-            <div class="border-container">
-              <h3 class="margin-bottom">Ways to contribute</h3>
-              <p>
-                You can just spread the word that we, our APIs, and products exist, and
-                subscribe to our <a target="_blank"
-                href="https://www.youtube.com/@developerlifecom">YouTube channel</a>.
-              </p>
-            </div>
-          </section>
+                    <section id="contribute">
+                        <div class="border-container">
+                            <h3 class="margin-bottom">Ways to contribute</h3>
+                            <p>
+                                You can just spread the word that we, our APIs, and
+                                products exist, and subscribe to our
+                                <a
+                                    target="_blank"
+                                    href="https://www.youtube.com/@developerlifecom"
+                                    >YouTube channel</a
+                                >.
+                            </p>
+                        </div>
+                    </section>
 
-          <hr />
+                    <hr />
 
-          <section id="our-ethos">
-            <h2><span class="emoji">🌟</span> Our ethos</h2>
-            <p class="margin-bottom">
-              Our open source products are anchored in the belief that
-              technology should serve the needs of humans and
-              <font color="#50FD31">a</font><font color="#54FD2E">l</font
-              ><font color="#58FC2B">l</font><font color="#5CFB28"> </font
-              ><font color="#60FA25">l</font><font color="#64F922">i</font
-              ><font color="#68F71F">v</font><font color="#6DF61C">i</font
-              ><font color="#71F41A">n</font><font color="#75F217">g</font
-              ><font color="#79F115"> </font><font color="#7DEF13">t</font
-              ><font color="#82EC10">h</font><font color="#86EA0E">i</font
-              ><font color="#8AE80D">n</font><font color="#8EE50B">g</font
-              ><font color="#92E309">s</font>. We strive to understand what
-              makes software usable & useful so that it can
-              <font color="#01BFBF">u</font><font color="#01C3BB">n</font
-              ><font color="#01C6B7">l</font><font color="#01CAB3">o</font
-              ><font color="#02CDB0">c</font><font color="#02D1AC">k</font
-              ><font color="#03D4A8"> </font><font color="#04D7A4">m</font
-              ><font color="#05DAA0">o</font><font color="#06DD9B">r</font
-              ><font color="#08E097">e</font><font color="#09E293"> </font
-              ><font color="#0BE58F">h</font><font color="#0CE78B">u</font
-              ><font color="#0EEA86">m</font><font color="#10EC82">a</font
-              ><font color="#12EE7E">n</font><font color="#14F07A"> </font
-              ><font color="#17F276">p</font><font color="#19F471">o</font
-              ><font color="#1CF66D">t</font><font color="#1FF769">e</font
-              ><font color="#21F865">n</font><font color="#24FA61">t</font
-              ><font color="#27FB5D">i</font><font color="#2AFC59">a</font
-              ><font color="#2DFC55">l</font>.
-            </p>
-            <p class="margin-bottom">
-              To this end, we are hard at work building <bo>innovative & creative</bo>
-              software and a <b>sustainable business</b> that helps software developers be
-              more productive in their remote & async
-              work reality, <font color="#EA0F85">s</font
-              ><font color="#E80D8A">m</font><font color="#E60B8E">i</font
-              ><font color="#E30992">l</font><font color="#E00896">e</font
-              ><font color="#DE079A"> </font><font color="#DB059E">m</font
-              ><font color="#D804A3">o</font><font color="#D503A7">r</font
-              ><font color="#D102AB">e</font><font color="#CE02AF"> </font
-              ><font color="#CB01B2">a</font><font color="#C701B6">n</font
-              ><font color="#C401BA">d</font><font color="#C001BE"> </font
-              ><font color="#BD01C1">b</font><font color="#B901C5">e</font
-              ><font color="#B501C9"> </font><font color="#B101CC">h</font
-              ><font color="#AD02CF">a</font><font color="#A903D3">p</font
-              ><font color="#A504D6">p</font><font color="#A105D9">i</font
-              ><font color="#9D06DC">e</font><font color="#9907DF">r</font> in
-              their daily lives <span class="emoji">🙂</span>.
-            </p>
-            <p class="margin-bottom">
-              If you're a developer, you can use our APIs (crates) now.
-              <span class="emoji">🎉</span>
-            </p>
-            <p class="margin-bottom">
-              We are indie developers, innovators and creatives at heart. We believe that
-              <font color="#CEAE02">m</font><font color="#D2AA03">o</font
-              ><font color="#D5A603">n</font><font color="#D8A204">e</font
-              ><font color="#DB9E05">y</font><font color="#DE9A07"> </font
-              ><font color="#E19608">i</font><font color="#E3920A">s</font
-              ><font color="#E68D0B"> </font><font color="#E8890D">n</font
-              ><font color="#EB850F">o</font><font color="#ED8111">t</font
-              ><font color="#EF7C13"> </font><font color="#F17815">t</font
-              ><font color="#F37418">h</font><font color="#F4701A">e</font
-              ><font color="#F66C1D"> </font><font color="#F86720">o</font
-              ><font color="#F96322">n</font><font color="#FA5F25">l</font
-              ><font color="#FB5B28">y</font><font color="#FC572B"> </font
-              ><font color="#FD532F">m</font><font color="#FD4F32">e</font
-              ><font color="#FE4B35">a</font><font color="#FE4739">s</font
-              ><font color="#FE443C">u</font><font color="#FE4040">r</font
-              ><font color="#FE3C44">a</font><font color="#FE3948">b</font
-              ><font color="#FE354B">l</font><font color="#FD324F">e</font
-              ><font color="#FD2F53"> </font><font color="#FC2B57">o</font
-              ><font color="#FB285B">u</font><font color="#FA255F">t</font
-              ><font color="#F92263">c</font><font color="#F71F68">o</font
-              ><font color="#F61D6C">m</font><font color="#F41A70">e</font> of
-              something that you create or work with others to create. We were
-              born to color outside the lines of conformity. <span class="emoji">✨</span>
-            </p>
-            <p class="margin-bottom">Rebels race on! <span class="emoji">🏁</span></p>
-          </section>
-        </div>
+                    <section id="our-ethos">
+                        <h2><span class="emoji">🌟</span> Our ethos</h2>
+                        <p class="margin-bottom">
+                            Our open source products are anchored in the belief that
+                            technology should serve the needs of humans and
+                            <font color="#50FD31">a</font><font color="#54FD2E">l</font
+                            ><font color="#58FC2B">l</font><font color="#5CFB28"> </font
+                            ><font color="#60FA25">l</font><font color="#64F922">i</font
+                            ><font color="#68F71F">v</font><font color="#6DF61C">i</font
+                            ><font color="#71F41A">n</font><font color="#75F217">g</font
+                            ><font color="#79F115"> </font><font color="#7DEF13">t</font
+                            ><font color="#82EC10">h</font><font color="#86EA0E">i</font
+                            ><font color="#8AE80D">n</font><font color="#8EE50B">g</font
+                            ><font color="#92E309">s</font>. We strive to understand what
+                            makes software usable & useful so that it can
+                            <font color="#01BFBF">u</font><font color="#01C3BB">n</font
+                            ><font color="#01C6B7">l</font><font color="#01CAB3">o</font
+                            ><font color="#02CDB0">c</font><font color="#02D1AC">k</font
+                            ><font color="#03D4A8"> </font><font color="#04D7A4">m</font
+                            ><font color="#05DAA0">o</font><font color="#06DD9B">r</font
+                            ><font color="#08E097">e</font><font color="#09E293"> </font
+                            ><font color="#0BE58F">h</font><font color="#0CE78B">u</font
+                            ><font color="#0EEA86">m</font><font color="#10EC82">a</font
+                            ><font color="#12EE7E">n</font><font color="#14F07A"> </font
+                            ><font color="#17F276">p</font><font color="#19F471">o</font
+                            ><font color="#1CF66D">t</font><font color="#1FF769">e</font
+                            ><font color="#21F865">n</font><font color="#24FA61">t</font
+                            ><font color="#27FB5D">i</font><font color="#2AFC59">a</font
+                            ><font color="#2DFC55">l</font>.
+                        </p>
+                        <p class="margin-bottom">
+                            To this end, we are hard at work building
+                            <b>innovative & creative</b> software and a
+                            <b>sustainable business</b> that helps software developers be
+                            more productive in their remote & async work reality,
+                            <font color="#EA0F85">s</font><font color="#E80D8A">m</font
+                            ><font color="#E60B8E">i</font><font color="#E30992">l</font
+                            ><font color="#E00896">e</font><font color="#DE079A"> </font
+                            ><font color="#DB059E">m</font><font color="#D804A3">o</font
+                            ><font color="#D503A7">r</font><font color="#D102AB">e</font
+                            ><font color="#CE02AF"> </font><font color="#CB01B2">a</font
+                            ><font color="#C701B6">n</font><font color="#C401BA">d</font
+                            ><font color="#C001BE"> </font><font color="#BD01C1">b</font
+                            ><font color="#B901C5">e</font><font color="#B501C9"> </font
+                            ><font color="#B101CC">h</font><font color="#AD02CF">a</font
+                            ><font color="#A903D3">p</font><font color="#A504D6">p</font
+                            ><font color="#A105D9">i</font><font color="#9D06DC">e</font
+                            ><font color="#9907DF">r</font> in their daily lives
+                            <span class="emoji">🙂</span>.
+                        </p>
+                        <p class="margin-bottom">
+                            If you're a developer, you can use our APIs (crates) now.
+                            <span class="emoji">🎉</span>
+                        </p>
+                        <p class="margin-bottom">
+                            We are indie developers, innovators, and creatives at heart. We
+                            believe that
+                            <font color="#CEAE02">m</font><font color="#D2AA03">o</font
+                            ><font color="#D5A603">n</font><font color="#D8A204">e</font
+                            ><font color="#DB9E05">y</font><font color="#DE9A07"> </font
+                            ><font color="#E19608">i</font><font color="#E3920A">s</font
+                            ><font color="#E68D0B"> </font><font color="#E8890D">n</font
+                            ><font color="#EB850F">o</font><font color="#ED8111">t</font
+                            ><font color="#EF7C13"> </font><font color="#F17815">t</font
+                            ><font color="#F37418">h</font><font color="#F4701A">e</font
+                            ><font color="#F66C1D"> </font><font color="#F86720">o</font
+                            ><font color="#F96322">n</font><font color="#FA5F25">l</font
+                            ><font color="#FB5B28">y</font><font color="#FC572B"> </font
+                            ><font color="#FD532F">m</font><font color="#FD4F32">e</font
+                            ><font color="#FE4B35">a</font><font color="#FE4739">s</font
+                            ><font color="#FE443C">u</font><font color="#FE4040">r</font
+                            ><font color="#FE3C44">a</font><font color="#FE3948">b</font
+                            ><font color="#FE354B">l</font><font color="#FD324F">e</font
+                            ><font color="#FD2F53"> </font><font color="#FC2B57">o</font
+                            ><font color="#FB285B">u</font><font color="#FA255F">t</font
+                            ><font color="#F92263">c</font><font color="#F71F68">o</font
+                            ><font color="#F61D6C">m</font
+                            ><font color="#F41A70">e</font> of something that you create
+                            or work with others to create. We were born to color outside
+                            the lines of conformity. <span class="emoji">✨</span>
+                        </p>
+                        <p class="margin-bottom">
+                            Rebels race on! <span class="emoji">🏁</span>
+                        </p>
+                    </section>
+                </div>
 
-        <div>
-          <section class="apps">
-            <h2>Our tools 🐰</h2>
-            <ul>
-              <li class="app-container">
-                <a target="_blank"
-                href="https://crates.io/crates/r3bl-cmdr">
-                  <img class="star-icon-img" src="images/star-gradient.svg" />
-                  <div class="app-text">
-                    <p class="p-tag">R3BL TUI APPS (GITI, EDI)</p>
-                    <h3><code>r3bl-cmdr</code></h3>
-                  </div>
-                </a>
-              </li>
-              <li class="app-container">
-                <a target="_blank"
-                href="https://crates.io/crates/r3bl_tui">
-                  <img class="star-icon-img" src="images/star-gradient.svg" />
-                  <div class="app-text">
-                    <p class="p-tag">R3BL TUI LIBRARY</p>
-                    <h3><code>r3bl_tui</code></h3>
-                  </div>
-                </a>
-              </li>
-              <li class="app-container">
-                <a target="_blank"
-                href="https://github.com/r3bl-org/r3bl-shortlink#r3bl-shortlink---a-browser-extension-written-in-typescript-and-react">
-                  <img class="star-icon-img" src="images/star-gradient.svg" />
-                  <div class="app-text">
-                    <p class="p-tag">R3BL BROWSER EXT</p>
-                    <h3><code>R3BL Shortlink</code></h3>
-                  </div>
-                </a>
-              </li>
-              <li class="app-container">
-                <a target="_blank"
-                href="https://crates.io/crates/r3bl-rust-analyzer-mcp-server">
-                  <img class="star-icon-img" src="images/star-gradient.svg" />
-                  <div class="app-text">
-                    <p class="p-tag">R3BL MCP SERVER</p>
-                    <h3><code>Rust Analyzer</code></h3>
-                  </div>
-                </a>
-              </li>
-              <li class="app-container">
-                <a target="_blank"
-                href="https://github.com/r3bl-org/r3bl-vscode-extensions#r3bl-vscode-extensions">
-                  <img class="star-icon-img" src="images/star-gradient.svg" />
-                  <div class="app-text">
-                    <p class="p-tag">R3BL VSCODE EXT</p>
-                    <h3><code>R3BL Development Pack</code></h3>
-                  </div>
-                </a>
-              </li>
-            </ul>
-          </section>
-          <section class="apps sticky-sidebar">
-            <h2>Our educational offerings 📚</h2>
-            <ul>
-              <li class="app-container">
-                <a target="_blank" href="https://developerlife.com">
-                  <img
-                    class="developerlife-icon-img"
-                    src="images/dl-logo-icon-dark.svg"
-                  />
-                  <div class="app-text">
-                    <p class="p-tag">Learning platform for devs</p>
-                    <h3><code>developerlife.com</code></h3>
-                  </div>
-                </a>
-              </li>
-              <li class="app-container">
-                <a target="_blank" href="https://www.youtube.com/@developerlifecom">
-                  <img
-                    class="developerlife-icon-img"
-                    src="images/dl-logo-icon-dark.svg"
-                  />
-                  <div class="app-text">
-                    <p class="p-tag">Video content for devs</p>
-                    <h3><code>Live coding YT channel</code></h3>
-                  </div>
-                </a>
-              </li>
-            </ul>
-          </section>
-        </div>
-      </section>
-    </main>
+                <div>
+                    <section class="apps">
+                        <h2>🐰 Our tools</h2>
+                        <ul>
+                            <li class="app-container">
+                                <a
+                                    target="_blank"
+                                    href="https://crates.io/crates/r3bl_tui"
+                                >
+                                    <img
+                                        class="star-icon-img"
+                                        src="images/star-gradient.svg"
+                                    />
+                                    <div class="app-text">
+                                        <p class="p-tag">R3BL TUI LIBRARY</p>
+                                        <h3><code>r3bl_tui</code></h3>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="app-container">
+                                <a
+                                    target="_blank"
+                                    href="https://crates.io/crates/r3bl-cmdr"
+                                >
+                                    <img
+                                        class="star-icon-img"
+                                        src="images/star-gradient.svg"
+                                    />
+                                    <div class="app-text">
+                                        <p class="p-tag">R3BL TUI APPS (GITI, EDI)</p>
+                                        <h3><code>r3bl-cmdr</code></h3>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="app-container">
+                                <a
+                                    target="_blank"
+                                    href="https://crates.io/crates/r3bl-rust-analyzer-mcp-server"
+                                >
+                                    <img
+                                        class="star-icon-img"
+                                        src="images/star-gradient.svg"
+                                    />
+                                    <div class="app-text">
+                                        <p class="p-tag">R3BL MCP SERVER</p>
+                                        <h3><code>Rust Analyzer</code></h3>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="app-container">
+                                <a
+                                    target="_blank"
+                                    href="https://github.com/r3bl-org/r3bl-vscode-extensions#r3bl-vscode-extensions"
+                                >
+                                    <img
+                                        class="star-icon-img"
+                                        src="images/star-gradient.svg"
+                                    />
+                                    <div class="app-text">
+                                        <p class="p-tag">R3BL VSCODE EXT</p>
+                                        <h3><code>R3BL Development Pack</code></h3>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="app-container">
+                                <a
+                                    target="_blank"
+                                    href="https://github.com/r3bl-org/r3bl-shortlink#r3bl-shortlink---a-browser-extension-written-in-typescript-and-react"
+                                >
+                                    <img
+                                        class="star-icon-img"
+                                        src="images/star-gradient.svg"
+                                    />
+                                    <div class="app-text">
+                                        <p class="p-tag">R3BL BROWSER EXT</p>
+                                        <h3><code>R3BL Shortlink</code></h3>
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                    </section>
+                    <section class="apps sticky-sidebar">
+                        <h2>📚 Our educational offerings</h2>
+                        <ul>
+                            <li class="app-container">
+                                <a target="_blank" href="https://developerlife.com">
+                                    <img
+                                        class="developerlife-icon-img"
+                                        src="images/dl-logo-icon-dark.svg"
+                                    />
+                                    <div class="app-text">
+                                        <p class="p-tag">Learning platform for devs</p>
+                                        <h3><code>developerlife.com</code></h3>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="app-container">
+                                <a
+                                    target="_blank"
+                                    href="https://www.youtube.com/@developerlifecom"
+                                >
+                                    <img
+                                        class="developerlife-icon-img"
+                                        src="images/dl-logo-icon-dark.svg"
+                                    />
+                                    <div class="app-text">
+                                        <p class="p-tag">Video content for devs</p>
+                                        <h3><code>Live coding YT channel</code></h3>
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                    </section>
+                </div>
+            </section>
+        </main>
 
-    <footer id="footer">
-      <img src="images/logo.svg" width="35" />
-    </footer>
-    <script src="index.js"></script>
-  </body>
+        <footer id="footer">
+            <img src="images/logo.svg" width="35" />
+        </footer>
+        <script src="index.js"></script>
+    </body>
 </html>
