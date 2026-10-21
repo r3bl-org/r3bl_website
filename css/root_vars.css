@@ -33,4 +33,15 @@
     rgba(221, 3, 107, 1) 0%,
     rgba(179, 14, 149, 1) 100%
   );
+
+  /* Text gradient colors */
+  --grad-orange-pink: linear-gradient(90deg, #fc592a, #fe3749);
+  --grad-gold-purple: linear-gradient(90deg, #e19508 0%, #fe3f41 50%, #a005d9 100%);
+  --grad-teal-green: linear-gradient(90deg, #07de99, #3dfe43);
+  --grad-green-chartreuse: linear-gradient(90deg, #45fe3c, #b3ca01);
+  --grad-gold-orange: linear-gradient(90deg, #c9b401, #f76a1e);
+  --grad-lime-yellow: linear-gradient(90deg, #50fd31, #92e309);
+  --grad-cyan-lime: linear-gradient(90deg, #01bfbf, #2dfc55);
+  --grad-pink-purple: linear-gradient(90deg, #ea0f85, #9907df);
+  --grad-gold-magenta: linear-gradient(90deg, #ceae02 0%, #fe443c 60%, #f41a70 100%);
 }

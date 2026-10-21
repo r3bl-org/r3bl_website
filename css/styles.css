@@ -252,6 +252,58 @@ hr {
   font-style: italic;
 }
 
+/* Text gradients */
+.gradient-text {
+  display: inline;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: transparent;
+}
+
+.gradient-orange-pink {
+  background-image: var(--grad-orange-pink);
+}
+
+.gradient-gold-purple {
+  background-image: var(--grad-gold-purple);
+}
+
+.gradient-teal-green {
+  background-image: var(--grad-teal-green);
+}
+
+.gradient-green-chartreuse {
+  background-image: var(--grad-green-chartreuse);
+}
+
+.gradient-gold-orange {
+  background-image: var(--grad-gold-orange);
+}
+
+.gradient-lime-yellow {
+  background-image: var(--grad-lime-yellow);
+}
+
+.gradient-cyan-lime {
+  background-image: var(--grad-cyan-lime);
+}
+
+.gradient-pink-purple {
+  background-image: var(--grad-pink-purple);
+}
+
+.gradient-gold-magenta {
+  background-image: var(--grad-gold-magenta);
+}
+
+/* Ensure text selection remains readable on gradient text */
+::selection {
+  background: rgba(221, 3, 107, 0.4);
+  color: #ffffff;
+  -webkit-text-fill-color: #ffffff;
+}
+
 .emoji {
   color: var(--text-color-white);
   font-size: 1.5em;
